@@ -1,0 +1,930 @@
+
+/* Styling for the marquee */
+.marquee-container {
+            width: 100%;
+            overflow: hidden;
+        }
+        .marquee-content p{
+          color: black;
+        }
+        .marquee-content {
+            white-space: nowrap;
+            animation: marquee 16s linear infinite; /* Adjust duration and timing function */
+        }
+
+        /* Animation for the marquee */
+        @keyframes marquee {
+          
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        .main{
+          text-align: center;
+        }
+.main1 h1{
+font-size: 50px;
+padding-top: 20px;
+}
+.main1 p{
+font-size: 25px;
+}
+.start{
+  width: 150px;
+  height: 40px;
+ text-transform: capitalize;
+  background-color:orangered;
+  border: none;
+  font-size:20px;
+  margin-top: 20px;
+}
+.group_img{
+ width:60%;
+ height: 0%;
+
+ margin-top: 50px;
+ margin-bottom: 30px;
+}
+.group_img1{
+ width:250px;
+ height:400px;
+ margin-left:960px;
+ margin-top: -800px;
+}
+.images{
+
+}
+.images img{
+ margin-left: 20px;
+  width: 100px;
+  
+}
+.images hr{
+  margin-left: -200px;
+  margin-right: 150px;
+}
+.images p{
+  margin-left: 80px;
+}
+.middle h1{
+ text-align: center;
+}
+.middle p{
+ text-align: center;
+}
+  
+.demo{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      margin-left: 180px;
+    
+  }
+
+  .team-member {
+      position: relative; 
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+      max-width: 350px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      margin-left: 10px;
+  }
+  
+  .team-member img {
+     width:6rem;
+     height:6rem;
+      border-radius: 50%;
+      margin-bottom: 10px;
+  }
+  
+  .team-member h2 {
+      font-size: 1rem;
+      margin: 0;
+  
+  }
+  
+  .team-member p {
+      font-size: 0.8rem;
+      color: #555;
+      margin-left: 10px;
+     line-height: 18px;
+    
+  }
+.images{text-align: center;}
+  .img-inner-dark img{
+    width: 100%;
+    height:auto;
+  }
+  .img-inner-dark{
+    text-align: center;
+  }
+  .img-inner-dark button{
+  width: 200px;
+  height: 40px;
+
+  background-color:orangered;
+  border: none;
+  font-size: 20px;
+  margin-top: 30px;
+  }
+.img-inner-dark p{
+font-size: 20px;
+margin-left: 30px;
+margin-top: 20px;
+}
+.middle1{
+  margin-top: -100px;
+  text-align: center;
+}
+.middle1 h1{
+
+}
+.middle1 p{
+
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+.middle2{
+  margin-top: -390px;
+}
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.middle2 h2{
+ text-align: center;
+ margin-top: 30px;
+ font-size: 50px;
+ margin: 0px 90px;
+  }
+  .middle3 h1{
+ text-align: center;
+ margin-top: 30px;
+  }
+  .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); /* Three columns */
+            gap: 30px; /* Adjust the gap between cart items */
+            margin-left:30px;
+          
+            margin-top: 60px;
+        }
+
+        .cart-container {
+          position: relative;
+       width: 300px;
+
+        }
+
+        .cart-image {
+            max-width: 100%;
+            height: 250px;
+            border-radius: 20px; /* Adjust the border radius to create the cart shape */
+            display: block;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7); /* Background color for the content overlay */
+            padding: 10px;
+            border-bottom-left-radius: 20px; /* Match the image's border radius */
+            border-bottom-right-radius: 20px; /* Match the image's border radius */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s ease;
+        }
+
+        .cart-container:hover .overlay {
+            opacity: 1; /* Show the overlay on hover */
+        }
+
+        .overlay h2,
+        .overlay p {
+            margin: 0;
+            text-align: center;
+        }
+
+        .know-more-link {
+            text-decoration: none;
+            color: #f39c12; /* Set the color you want for the link */
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .marquee-content {
+            white-space: nowrap;
+            animation: marquee 25s linear infinite; /* Adjust duration and timing function */
+        }
+         /* Pause animation on hover */
+         .marquee-container:hover .marquee-content {
+            animation-play-state: paused;
+        }
+        /* Animation for the marquee */
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        /* Styling for the team member cards */
+        .cart_scroll{
+            display: flex;
+        }
+        .team-member1 {
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            width: 350px; /* Adjust the card width as needed */
+        }
+
+        /* Style for the team member image */
+        .team-member1 img {
+            max-width: 100%;
+            border-radius: 50%; /* Makes the image circular */
+        }
+
+        /* Style for the team member name (h2) */
+        .team-member1 h2 {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* Style for the team member description (p) */
+        .team-member1 p {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+       
+      
+        .team-member2 {
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            width: 350px; /* Adjust the card width as needed */
+            height: auto;
+        }
+
+        /* Style for the team member image */
+        .team-member2 img {
+            width:50%;
+            border-radius: 30%; /* Makes the image circular */
+        }
+
+      
+        /* Style for the team member description (p) */
+        .team-member2 p {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .middle4{
+          text-align: center;
+        }
+        .middle4 h2{
+          font-size: 40px;
+          margin-top: 40px;
+     
+          }
+          .middle4 p{
+       font-size: 30px;
+          }
+          .company_images{
+  text-align: center;
+          }
+        .company_images img{
+
+     width: 13%;
+          padding: 20px;
+          
+        }
+        .suggestion{
+          background-color: white;
+         
+        }
+        .group1{
+          display: inline-flex;
+        }
+        .suggestion-title h1{
+    text-align: center;
+margin-top:100px;
+font-size: 40px;
+text-transform: capitalize;
+font-weight: 700;
+padding-top: 20px;
+}
+.suggestion-images{
+    margin-top: 50px;
+    width: 29%;
+   margin-left: 50px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.suggestion-images img{
+    width: 100%;
+    
+}
+.suggestion-images h1{
+  margin-left: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.suggestion-images p{
+    margin: 10px 20px;
+}
+.suggestion-images a{
+    text-decoration: none;
+  margin-left: 20px;
+  margin-top: 30px;
+    color: black;
+}
+.suggestion-button {
+    margin-top: 50px;
+    text-align: center;
+    text-transform:uppercase ;
+    font-weight: bold;
+
+}
+.suggestion-button a{
+    padding: 20px  20px;
+    background-color: lightskyblue;
+    text-decoration: none;
+    color: black;
+}     
+.middle6{
+  text-align: center;
+}
+          .middle6 {
+            margin-top: 50px;
+            background-color:navy;
+          }
+          .middle6 h1{
+          padding-top: 40px;
+          
+          color: white;
+        
+          }
+          .middle6 img{
+         position: relative;
+         left:60px;
+         width:15%;
+         
+         
+          }
+          .middle6 button{
+            background-color:orangered;
+            color:white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 30px;
+            width: 150px;
+           
+            margin-bottom: 30px;
+          }
+            .middle6 button a{
+              text-decoration: none;
+              font-size: 20px;
+              color: black;
+        }
+
+        .middle6 button:hover {
+            background-color:white;
+        }
+        .info{
+          margin-left: 30px;
+          margin-bottom: 30px;
+        }
+        .navbar{
+          margin-top: -8px;
+        }
+ @media(max-width:600px){
+  
+/* Styling for the marquee */
+.marquee-container {
+            width: 100%;
+            overflow: hidden;
+        }
+        .marquee-content p{
+          color: black;
+        }
+        .marquee-content {
+            white-space: nowrap;
+            animation: marquee 16s linear infinite; /* Adjust duration and timing function */
+        }
+
+        /* Animation for the marquee */
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+
+.start{
+  width: 150px;
+  height: 40px;
+
+  background-color:orangered;
+  border: none;
+  font-size: 15px;
+}
+.group_img{
+ width:60%;
+ height:0%;
+
+ margin-top: 40px;
+ margin-bottom: 30px;
+ margin-right: 60px;
+}
+.group_img1{
+ width:40%;
+ height:250px;
+ margin-left:10px;
+ margin-top: -200px;
+}
+.images{
+text-align: center;
+}
+.images img{
+  height: 30px;
+  width: 100px;
+ 
+  
+}
+.images hr{
+  margin-left: 10px;
+  margin-right: 60px;
+}
+.images p{
+  margin-left: 60px;
+}
+.middle h1{
+ text-align: center;
+ margin-left: 10px;
+}
+.middle p{
+ text-align: center;
+ margin-left: 10px;
+}
+  
+.demo{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      margin-left: 30px;
+    
+  }
+
+  .team-member {
+      position: relative; 
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+      width: 500px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      margin-left: 10px;
+  }
+  
+  .team-member img {
+     width:6rem;
+     height:6rem;
+      border-radius: 50%;
+      margin-bottom: 10px;
+  }
+  
+  .team-member h2 {
+      font-size: 1rem;
+      margin: 0;
+  
+  }
+  
+  .team-member p {
+      font-size: 0.8rem;
+      color: #555;
+      margin-left: 10px;
+     line-height: 18px;
+    
+  }
+
+  .img-inner-dark img{
+    width: 100%;
+    height:auto;
+  }
+  .img-inner-dark button{
+  width: 200px;
+  height: 40px;
+
+  background-color:orangered;
+  border: none;
+  font-size: 20px;
+  margin-top: 30px;
+  }
+.img-inner-dark p{
+text-align: center;
+margin-left: 10px;
+margin-top: 20px;
+}
+.middle1{
+  margin-top: 40px;
+}
+.middle1 h1{
+text-align: center;
+}
+.middle1 p{
+  text-align: center;
+}
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.middle2 h2{
+  text-align: center;
+ margin-top: 450px;
+ font-size: 30px;
+  }
+  .middle3 h1{
+ text-align: center;
+ margin-top: 30px;
+  }
+  .grid-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); /* Three columns */
+            gap: 10px; /* Adjust the gap between cart items */
+            margin-left:50px;
+            margin-top: 30px;
+        }
+
+        .cart-container {
+            position: relative;
+            width: 400px; /* Adjust the container's width as needed */
+        }
+
+        .cart-image {
+            max-width: 100%;
+            border-radius: 20px; /* Adjust the border radius to create the cart shape */
+            display: block;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7); /* Background color for the content overlay */
+            padding: 10px;
+            border-bottom-left-radius: 20px; /* Match the image's border radius */
+            border-bottom-right-radius: 20px; /* Match the image's border radius */
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s ease;
+        }
+
+        .cart-container:hover .overlay {
+            opacity: 1; /* Show the overlay on hover */
+        }
+
+        .overlay h2,
+        .overlay p {
+            margin: 0;
+            text-align: center;
+        }
+
+        .know-more-link {
+            text-decoration: none;
+            color: #f39c12; /* Set the color you want for the link */
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .marquee-content {
+            white-space: nowrap;
+            animation: marquee 12s linear infinite; /* Adjust duration and timing function */
+        }
+         /* Pause animation on hover */
+         .marquee-container:hover .marquee-content {
+            animation-play-state: paused;
+        }
+        /* Animation for the marquee */
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        /* Styling for the team member cards */
+        .cart_scroll{
+            display: flex;
+        }
+        .team-member1 {
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            width: 350px; /* Adjust the card width as needed */
+        }
+
+        /* Style for the team member image */
+        .team-member1 img {
+            max-width: 100%;
+            border-radius: 50%; /* Makes the image circular */
+        }
+
+        /* Style for the team member name (h2) */
+        .team-member1 h2 {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        /* Style for the team member description (p) */
+        .team-member1 p {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        
+        /* Styling for the team member cards */
+        .cart_scroll2{
+            display: flex;
+        }
+        .team-member2 {
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            width: 350px; /* Adjust the card width as needed */
+        }
+
+        /* Style for the team member image */
+        .team-member2 img {
+            width:20%;
+            border-radius: 50%; /* Makes the image circular */
+        }
+
+      
+        /* Style for the team member description (p) */
+        .team-member2 p {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .middle4 h2{
+          margin-top: 40px;
+          text-align: center;
+          }
+          .middle4 p{
+          text-align: center;
+          }
+          .company_images{
+          margin-left: 40px;
+          }
+        .company_images img{
+          height: 100px;
+          width: 100px;
+          padding: 20px;
+          
+        }
+        .group1{
+     
+          display: inline-flex;
+          flex-direction: column;
+        }
+        .suggestion-title h1{
+    text-align: center;
+margin-top:100px;
+font-size: 30px;
+text-transform: capitalize;
+font-weight: 700;
+padding-top: 20px;
+}
+.suggestion-images{
+    margin-top: 50px;
+    width: 80%;
+   margin-left: 50px;
+
+ 
+}
+.suggestion-images img{
+    width: 100%;
+    
+}
+.suggestion-images h1{
+  margin-left: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.suggestion-images p{
+    margin: 10px 20px;
+}
+.suggestion-images a{
+    text-decoration: none;
+  margin-left: 20px;
+  margin-top: 30px;
+    color: black;
+}
+.suggestion-button {
+    margin-top: 50px;
+    text-align: center;
+    text-transform:uppercase ;
+    font-weight: bold;
+
+}
+.suggestion-button a{
+    padding: 20px  20px;
+    background-color: lightskyblue;
+    text-decoration: none;
+    color: black;
+}     
+          .middle6 {
+            margin-top: 50px;
+            background-color:navy;
+          
+         
+          }
+          .middle6{
+            text-align: center;
+          }
+          .middle6 h1{
+          padding-top: 40px;
+   
+          color: white;
+          margin-left: 10px;
+          }
+          .middle6 img{
+          width:30%;
+        position: relative;
+        left:10px;
+        
+          }
+          .middle6 button{
+            background-color:orangered;
+            color:white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 30px;
+            width: 150px;
+          
+            margin-bottom: 30px;
+        }
+        .navbar{
+          margin-top: -8px;
+        }
+
+        .middle6 button:hover {
+            background-color:white;
+        }
+      }
+
+          .marquee-background{
+            display:inline-flex;
+          } 
+           /* Pause animation on hover */
+         .marquee:hover .marquee-background {
+            animation-play-state: paused;
+        }

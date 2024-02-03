@@ -1,0 +1,289 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block contant %}
+
+
+<main>
+<section class="main">
+    <div class="main1">
+        <h1>{{mainheader.heading}}</h1>
+        <p>{{mainheader.description}}
+
+          <button class="start">{{mainheader.buttontext}}</button>
+    </div>
+    <div>
+     
+      <img src="{{mainimg.mainimg}}" alt=""  class="group_img">
+    </div>
+      <div>
+        <img src="{{mainimg.smallimg}}" alt="" class="group_img1">
+      </div>
+    </section>
+      <div class="images">
+        {% for obj in subimg %}
+        <img src="{{obj.subimg}}"alt="">
+        {% endfor %}
+        <hr>
+        <p>{{buisness1.smallheading}}</p>
+        </div>
+    <div class="middle">
+      <h1>{{buisness1.heading}}</h1>
+      <p>{{buisness1.description}}</p>
+    </div>
+
+  <div class="demo">
+    {% for obj1 in buisnessdetails %}
+      <div class="team-member">
+        <img src="{{obj1.img}}" alt="Team Member 1">
+        <h2>{{obj1.heading}}</h2>
+        <p>{{obj1.description}}</p>
+    </div> 
+       {% endfor %}
+
+
+    
+    </div>
+</div>
+      <div>
+          <div class="img-inner-dark">
+          <button>{{plan1.buttontext}}</button>	
+          <p>{{plan1.heading}}</p>
+          <img src="{{plan1.img}}"alt="">	
+          </div>
+       </div>
+   
+      <div class="middle1">
+        <h1>{{whychooesus.heading}}</h1>
+        <p>{{whychooesus.description}}</p>				
+      </div>
+      <div class="container">
+        <div class="container-fluide">
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators" class="buttons">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active b1" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" class="b1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" class="b1" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              
+              <div class="carousel-item active"data-bs-interval="10000">
+                <img src="{{slideimg_rightdescription_active.img}}" class="" alt="...">
+                <div class="carousel-images">
+                    <div class="carousel-images1 shadow">
+                        <div>
+                      <h1>{{slideimg_rightdescription_active.heading1}}</h1>
+                      <p>{{slideimg_rightdescription_active.description1}}</p>
+                    </div>
+                    <div>
+                      <h1>{{slideimg_rightdescription_active.heading2}}</h1>
+                      <p>{{slideimg_rightdescription_active.description2}}</p>
+                      </div>
+                      <div>
+                        <h1>{{slideimg_rightdescription_active.heading3}}</h1>
+                      <p>{{slideimg_rightdescription_active.description3}}</p>
+                      </div>
+                      <div>
+                        <h1>{{slideimg_rightdescription_active.heading4}}</h1>
+                      <p>{{slideimg_rightdescription_active.description4}}</p>
+                      </div>
+                    </div>
+                </div>
+              </div>
+             {% for obj3 in slideimg_rightdescription %}
+              <div class="carousel-item">
+                <img src="{{obj3.img}}" class=" " alt="...">
+                <div class="carousel-images">
+                    <div class="carousel-images1  shadow" >
+                        <div>
+                      <h1>{{obj3.heading1}}</h1>
+                      <p>{{obj3.description1}}</p>
+                    </div>
+                    <div>
+                      <h1>{{obj3.heading2}}</h1>
+                      <p>{{obj3.description2}}</p>
+                      </div>
+                      <div>
+                        <h1>{{obj3.heading3}}</h1>
+                      <p>{{obj3.description3}}</p>
+                      </div>
+                      <div>
+                        <h1>{{obj3.heading4}}</h1>
+                      <p>{{obj3.description4}}</p>
+                      </div>
+                    </div>
+                </div>
+              </div>            
+    {% endfor %}
+              
+            </div>
+          
+          </div>
+        </div>
+        </div>
+      </div>
+      <style>
+        .carousel-item img{
+            width: 100%;
+            height: 100%;
+        }
+        .carousel-images h1{
+            font-size: 18px;
+            margin-left: 20px;
+            text-transform: capitalize;
+            margin-top: 20px;
+        }
+       .carousel-images1{
+        background-color: white;
+       }
+        .carousel-images{
+         
+           padding-bottom: 20px;
+       
+        }
+        .carousel-images p{
+            font-size: 18px;
+            margin-left: 20px;
+            text-transform: capitalize;
+            margin-top: 20px;
+        }
+       
+        @media(min-width:1200px){
+            .carousel-item img{
+                height: 600px;
+                margin: 20px 30px;
+                padding-top: 30px;
+      
+            }
+            .carousel-item{
+              width: 45%;
+            }
+            .carousel-images1{
+              width: 50%;
+             margin-left: 800px;
+         position: relative;
+         top:-550px;
+         height: 450px;
+         padding: 20px 20px;
+        border-radius: 5px 5px;
+       
+    
+            }
+            .b1{
+              margin-top: -450px;
+            }
+           
+        }
+    </style>
+      <div class="middle2">
+        <h2>
+         {{cartheading.heading}}
+        </h2>
+      </div>
+      <div class="grid-container">
+
+
+        <!-- Cart 1 -->
+        {% for obj4 in cart %}
+        <div class="cart-container">
+            <img src="{{obj4.img}}"alt="Product Image" class="cart-image">
+            <div class="overlay">
+                <h2>{{obj4.heading1}}</h2>
+                <p>{{obj4.description1}}</p>
+                <a href="{{obj4.buttonlink}}" class="{{obj4.buttontext}}">Know More</a>
+            </div>
+        </div>
+        {% endfor %}
+
+
+
+
+</div>
+<div class="middle3">
+  <h1>{{slidercart.heading}}</h1>
+</div>
+<div class="marquee-container">
+  <div class="marquee-content">
+  <div class="cart_scroll">
+
+    {% for obj5 in slidermaincart %}
+   <div class="team-member1">
+      <img src="{{obj5.img}}" alt="Team Member1">
+      <p>{{obj5.description}}</p>
+      <h2>{{obj5.name}}</h2>
+   </div>
+   {% endfor %}
+
+
+
+</div>
+</div>
+</div>
+<marquee direction="right"  onmouseover="this.stop();"   onmouseout="this.start();">
+  <div class="marquee-background">
+    {% for obj6 in slidermaincart2 %}
+   <div class="team-member2">
+      <img src="{{obj6.img}}" alt="Team Member">
+      <p>{{obj6.description}}</p>
+   </div>
+   {% endfor %}
+
+  </div>
+</marquee>
+<section>
+<div class="middle4">
+  <h2>{{brandtext.heading}}</h2>
+  <p>{{brandtext.description}}</p>
+</div>
+<div class="company_images">
+  {% for obj7 in brandimg %}
+  <img src="{{obj7.img}}"alt="">
+  {% endfor %}
+  <br>
+  {% for obj8 in brandimg2 %}
+  <img src="{{obj8.img}}"alt="">
+  {% endfor %}
+
+  </div>
+</section>
+  <section class="suggestion">
+
+    <div class="suggestion-title">
+      <h1>{{suggestedheading.heading}}</h1>
+    </div>
+    <div class="group1">
+      {% for obj9 in suggested %}
+    <div class="suggestion-images shadow">
+      <img src="{{obj9.img}}">
+      <figure>
+        <a href="">{{obj9.heading}}</a>
+        <p> {{obj9.description}}</p>
+        <a href="{{obj9.buttonurl}}" class="text-primary">{{obj9.buttonname}}</a>
+      </figure>
+    </div>
+    {% endfor %}
+
+
+
+  </div>
+  </section>
+  <div class="middle6">
+    <h1>{{newsheading.heading}}</h1>
+    {% for obj10 in newsimg %}
+    <img src="{{obj10.img}}"alt="">
+    {% endfor %}
+
+
+    <button><a  href="{{newsheading.buttonurl}}"   alt="">{{newsheading.buttontext}}</button>
+  </div>
+
+
+
+
+
+  {% endblock contant %}
+     
+
+
+
+

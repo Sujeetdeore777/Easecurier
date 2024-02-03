@@ -1,0 +1,82 @@
+
+/* Styling for the marquee */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+}
+.marquee-content p{
+color: black;
+}
+.marquee-content {
+  white-space: nowrap;
+  animation: marquee 16s linear infinite; /* Adjust duration and timing function */
+}
+
+/* Animation for the marquee */
+@keyframes marquee {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+/* main style */
+.middle1{
+  background-color: white;
+}
+.middle1 img{
+  width: 100%;
+ height: 200px;
+}
+.middle1 h1{
+ text-align: center;
+ padding-top: 40px;
+}
+.middle1 p{
+  text-align: center;
+}
+.logomiddle{
+text-align: center;
+}
+
+.logomiddle img{
+    width: 150px;
+    height: 50px;
+   
+   
+}
+/* CSS for the search bar container */
+.search-container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+/* CSS for the search input */
+.search-input1 {
+  width: 350px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* CSS for the search button */
+.search-button1 {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-left: -82px;
+  cursor: pointer;
+}
+
+/* Add hover effect to the search button */
+.search-button1:hover {
+  background-color: #0056b3;
+}

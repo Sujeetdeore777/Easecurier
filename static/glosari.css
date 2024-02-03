@@ -1,0 +1,197 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid img{
+  width: 30%;
+  margin-left: 20px;
+}
+.navbar{
+  margin-top: -8px;
+  background-color:  rgb(58, 149, 205);
+}
+
+.main-images img{
+  width: 100%;
+  height:400px;
+}
+.main-info h1{
+margin-top: -340px;
+text-align: center;
+font-size: 38px;
+}
+.main-info p{
+  text-align: center;
+  margin: 0px 10px;
+}
+.main-button{
+  margin-top: 20px;
+  margin-left: 200px;
+  padding: 10px 10px;
+  border-radius: 5px 5px;
+  border: white solid;
+  background-color: rgb(23, 213, 223);
+color: rgb(7, 94, 118);
+}
+
+.footer{
+  padding-bottom: 20px;
+  background-color:  rgb(58, 149, 205);
+}
+
+.footer-log img{
+  width: 30%;
+  padding-top: 30px;
+  margin-left: 30px;
+}
+.our-location h1{
+  margin-top: 20px;
+  font-size:20px;
+  margin-left: 30px;
+  font-weight: 700;
+  color: #c1e6f7;
+}
+.our-location a{
+  text-decoration: none;
+  margin-left: 30px;
+  color: white;
+}
+.our-location a i{
+  text-decoration: none;
+
+  width:5px;
+  color: white;
+  font-size: 20px;
+}
+.our-location{
+  width:48%;
+  display:inline-block;
+}
+.sign p{
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size:20px;
+  margin-top: 30px;
+  color: #c1e6f7;
+}
+.sign input{
+  margin-left:90px;
+  padding: 10px 10px;
+  text-transform: capitalize;
+  width: 55%;
+
+  position: relative;
+  left:5px;
+}
+.sign button{
+  padding: 10px 10px;
+  background-color: #c1e6f7;
+  text-transform: uppercase;
+  font-weight: 700;
+
+}
+.google img{
+  width:80%;
+}
+.app img{
+  width: 80%;
+}
+.app,.google{
+  margin-top: 30px;
+  display: inline-block;
+  width: 47%;
+position: relative;
+left:25px;
+ 
+}
+.footer-title p{
+  margin-top: 20px;
+  text-align: center;
+  text-transform: capitalize;
+  color: white;
+  font-size: 18px;
+}
+@media(min-width:1400px){
+  .container-fluid img{
+      width: 10%;
+      margin-left: 80px;
+  }
+  .navbar-nav{
+      margin-right: 80px;
+      
+  }
+  .navbar-nav li a{
+      text-transform: capitalize;
+      font-size: 18px;
+      font-weight: 700;
+   
+  }
+  
+  .icons{
+position: relative;
+right:65px;
+text-transform: capitalize;
+font-size: 18px;
+font-weight: 700;
+
+  }
+  .icons a{
+      text-decoration: none;
+      margin-left: 10px;
+  }
+  .main-images img{
+      height: 650px;
+  }
+  .main-info h1{
+      font-size:55px;
+      margin-top: -490px;
+  }
+  .main-info p{
+       font-size: 25px;
+       margin-top: 10px;
+  }
+  .main-info button{
+      margin-top: 30px;
+      margin-left:700px;
+      font-size:20px;
+  }
+
+  .footer-log img{
+      width: 13%;
+      margin-left:90px;
+   
+      }
+      .our-location{
+          width:13%;
+          display: inline-block;
+         position: relative;
+         left:80px;
+          margin-top: 20px;
+       
+      }
+     .our-location a{
+
+      font-size:20px;
+     }
+
+      .info{
+          display: inline-block;
+          width: 35%;
+          position: relative;
+          left:100px;
+          top:-35px;
+      
+      }
+      .google img{
+          width: 60%;
+          margin-left: 80px;
+          margin-top: -20px;
+      }
+      .app img{
+          width: 60%;
+          margin-top: -20px;
+      }
+      
+}

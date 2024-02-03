@@ -1,0 +1,1083 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block contant %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="ecomerce.css" rel="stylesheet">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+
+}
+.main-info{
+    text-align: center;
+}
+.container-fluid img{
+    width: 30%;
+}
+.navbar{
+    background-color: lightskyblue;
+}
+
+.main-images img{
+    width: 100%;
+    height:400px;
+}
+.main-info{
+    text-align: center;
+}
+.main-info h1{
+ margin-top: -340px;
+ 
+ font-size: 38px;
+}
+.main-info p{
+ 
+    margin: 0px 10px;
+}
+.main-button{
+    margin-top: 20px;
+
+    padding: 10px 10px;
+    border-radius: 5px 5px;
+    border: white solid;
+    background-color: rgb(23, 213, 223);
+ color: rgb(7, 94, 118);
+}
+.busines{
+    margin-top: 80px;
+}
+.busines-info p{
+    margin: 20px 40px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing:2px;
+    text-transform: capitalize;
+ color: rgb(10, 197, 197);
+}
+.busines-image1 img{
+width: 80%;
+margin-left:50px;
+}
+.busines-image2 img{
+    width: 70%;
+    margin-left:70px;
+    margin-top: 40px;
+    }
+    .steps{
+        margin-top: 30px;
+    }
+    .steps-info h1{
+        margin-left: 100px;
+        font-size:35px;
+        color: rgb(10, 197, 197);
+
+    }
+
+    .step-1  h1{
+        margin-top: 30px;
+        margin-left:20px;
+        font-size: 20px;
+        color: rgb(11, 134, 140);
+    }
+    .step-1 p{
+        margin-left:20px;
+    font-size: 18px;
+    margin: 0px 20px;
+    }
+    .step-2  h1{
+        margin-top: 30px;
+        margin-left:20px;
+        font-size: 20px;
+        color: rgb(11, 134, 140);
+    }
+    .step-2 p{
+        margin-left:20px;
+    font-size: 18px;
+    margin: 0px 20px;
+    }
+    .step-3  h1{
+        margin-top: 30px;
+        margin-left:20px;
+        font-size: 20px;
+        color: rgb(11, 134, 140);
+    }
+    .step-3 p{
+        margin-left:20px;
+        font-size: 18px;
+        margin: 0px 20px;
+    }
+    .features{margin-top: 30px;
+        padding-bottom: 80px;
+        background-color: rgb(228, 240, 247);
+    }
+    .features-info h1{
+   padding-top: 20px;
+       text-align: center;
+     font-weight:700;
+}
+
+.features-image1{
+    background-color: white;
+    width: 70%;
+    margin-top: 40px;
+    margin-left: 90px;
+    border-radius: 5px;
+    height: 450px;
+}
+.features-image1 img{
+    width: 100%;
+    height: 300px;
+}
+.features h1{
+    text-align: center;
+    margin-top:5px;
+    font-size: 20px;
+    color: rgb(11, 134, 140);
+}
+.features p{
+    text-align: center;
+}
+.partner{
+    margin-top: 50px;
+}
+.partner-info h1{
+    text-align: center;
+    color: rgb(10, 175, 184);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.owl{
+    margin-top: 30px;
+ width: 90%;
+ margin-left:50px;
+}
+.marquee{
+    background-color: lightskyblue;
+    padding-bottom: 30px;
+}
+.marquee-info h1{
+    padding-top: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+.marquee-1{
+    background-color: white;
+    width:68%;
+    padding-bottom: 20px;
+    margin-left: 30px;
+
+}
+.marquee-1 img{
+    width: 40%;
+    padding-top:30px;
+    margin-left: 30px;
+}
+.marquee-1 h1{
+    font-size:18px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.marquee-1  p{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.trust-info h1{
+    text-transform: capitalize;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(11, 137, 137);
+}
+.trust-info{
+    text-transform: capitalize;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+.trust-images{
+    background-color: white;
+    width:40%;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+.trust-images img{
+    width: 90%;
+}
+.trust-images{
+    display: inline-block;
+    width:26%;
+    margin-left: 25px;
+}
+.trust-images:hover{
+    background-color: rgb(199, 244, 244);
+}
+
+.suggestion-title h1{
+    text-align: center;
+margin-top:80px;
+font-size: 30px;
+text-transform: capitalize;
+font-weight: 700;
+}
+.suggestion-images{
+    margin-top: 50px;
+    width: 80%;
+    margin-left: 50px;
+    padding-bottom: 20px;
+}
+.suggestion-images img{
+    width: 100%;
+}
+.suggestion-images h1{
+margin-left: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.suggestion-images p{
+    margin: 10px 20px;
+}
+.suggestion-images a{
+    text-decoration: none;
+  margin-left: 20px;
+  margin-top: 30px;
+    color: black;
+}
+.suggestion-button {
+    margin-top: 50px;
+    text-align: center;
+    text-transform:uppercase ;
+    font-weight: bold;
+
+}
+.suggestion-button a{
+    padding: 20px  20px;
+    background-color: lightskyblue;
+    text-decoration: none;
+    color: black;
+}
+
+.collapsible {
+    background-color: #c1e6f7;
+    color: rgb(8, 8, 8);
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+ margin-left:55px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  .collab-info{
+    margin-top: 20px;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    width: 80%;
+    margin-left: 50px;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #ffffff;
+  }
+  .question-title h1{
+    text-align: center;
+    margin-top: 80px;
+    color: rgb(7, 102, 133);
+  }
+  .reach{
+    background-color: #c1e6f7;
+    margin-top: 30px;
+    padding-bottom:50px;
+  }
+  .reah-titla{
+    padding-top: 30px;
+    text-align: center;
+  }
+  .reah-titla h1{
+    font-size:30px;
+    margin: 10px 20px;
+  }
+  .reah-titla a{
+    position: relative;
+    top:20px;
+    background-color: black;
+    padding: 10px 30px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .container-fluid img{
+    width: 30%;
+    margin-left: 20px;
+  }
+  .navbar{
+    margin-top: -8px;
+    background-color:  rgb(239, 137, 12);
+  }
+  
+  .main-images img{
+    width: 100%;
+    height:400px;
+  }
+  .main-info h1{
+  margin-top: -340px;
+  text-align: center;
+  font-size: 38px;
+  }
+  .main-info p{
+    text-align: center;
+    margin: 0px 10px;
+  }
+  
+  .footer{
+    padding-bottom: 20px;
+    background-color:  rgb(0, 0, 0);
+  }
+  
+  .footer-log img{
+    width: 30%;
+    padding-top: 30px;
+    margin-left: 30px;
+  }
+  .our-location h1{
+    margin-top: 20px;
+    font-size:20px;
+    margin-left: 30px;
+    font-weight: 700;
+    color: #eea909;
+  }
+  .our-location a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: rgb(255, 255, 255);
+  }
+  .our-location a i{
+    text-decoration: none;
+  
+    width:5px;
+    color: white;
+    font-size: 20px;
+  }
+  .our-location{
+    width:48%;
+    display:inline-block;
+  }
+  .sign p{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size:20px;
+    margin-top: 30px;
+    color: #eea909;
+  }
+  .sign input{
+    margin-left:90px;
+    padding: 10px 10px;
+    text-transform: capitalize;
+    width: 55%;
+  
+    position: relative;
+    left:5px;
+  }
+  .sign button{
+    text-decoration: none;
+    padding: 10px 10px;
+    background-color:  #eea909;;
+    text-transform: uppercase;
+    font-weight: 700;
+  
+  }
+  .google img{
+    width:80%;
+  }
+  .app img{
+    width: 80%;
+  }
+  .app,.google{
+    margin-top: 30px;
+    display: inline-block;
+    width: 47%;
+  position: relative;
+  left:25px;
+   
+  }
+  .footer-title p{
+    margin-top: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    font-size: 18px;
+  } 
+  
+  .footer-title p{
+    margin-top: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    font-size: 18px;
+  }
+@media(min-width:1200px){
+    .container-fluid img{
+        width:10%;
+   margin-left: 80px;
+        padding-top: 10px;
+    }
+    .navbar-nav{
+        margin-right: 80px;
+    }
+    .navbar-nav li a{
+        text-transform: capitalize;
+        font-size: 18px;
+        font-weight: 700;
+     
+    }
+    
+    .icons{
+position: relative;
+right:65px;
+text-transform: capitalize;
+font-size: 18px;
+font-weight: 700;
+
+    }
+    .icons a{
+        text-decoration: none;
+        margin-left: 10px;
+    }
+    .main-images img{
+        height: 650px;
+    }
+    .main-info h1{
+        font-size:55px;
+        margin-top: -490px;
+    }
+    .main-info p{
+         font-size: 25px;
+         margin-top: 10px;
+    }
+    .main-info button{
+        margin-top: 30px;
+    
+        font-size:20px;
+    }
+    
+    .busines-info p{
+        font-size: 40px;
+     
+    }
+    .busines{
+        margin-top: 290px;
+        margin-left: 40px;
+    }
+   
+   .busines-info,.busines-image2{
+    display: inline-block;
+    width:49%;
+   }
+  
+   
+   .busines-image2 img{
+    width: 80%;
+    margin-left: 30px;
+   }
+   .busines-image1 img{
+    width:70%;  
+    margin-left:20px;
+    margin-top: -120px;
+}
+.busines-image1,.steps{
+    margin-top: 80px;
+    display: inline-block;
+    width: 46%;
+}
+.steps{
+    width:50%;
+}
+.step-1 h1{
+    margin-left: 100px;
+}
+.step-1 p{
+    margin-left:100px;
+}
+.step-2 h1{
+    margin-left: 100px;
+}
+.step-2 p{
+    margin-left:100px;
+}
+.step-3 h1{
+    margin-left: 100px;
+}
+.step-3 p{
+    margin-left:100px;
+}
+.features-info h1{
+    font-size: 30px;
+    padding-top: 30px;
+}
+.features-image1{
+    height: 430px;
+    width: 25%;
+    display: inline-table;
+
+}
+.features-image1 h1{
+    font-size:20px;
+}
+.features-image1 p{
+    margin: 10px 9px;
+}
+.owl{
+    width: 75%;
+    position: relative;
+    left:180px;
+}
+.trust-info h1{
+    font-size: 40px;
+}
+.trust-info p{
+    font-size: 30px;
+}
+.trust-images{
+    width: 10%;
+position: relative;
+left:230px;
+}
+.trust-images img{
+    width:90%;
+}
+.suggestion-title h1{
+    font-size: 
+    40px;
+}
+.suggestion-images{
+    height:480px;
+    width:23%;
+    position: relative;
+    left:150px;
+    display: inline-table;
+}
+.suggestion-images p{
+    font-size: 20px;
+}
+.suggestion-button a{
+    font-size:20px;
+}
+.question-title h1{
+    margin-top: 80px;
+    font-size: 40px;
+}
+.collab-info{
+ width:49%;
+ display:inline-block;
+   
+}
+.reah-titla h1{
+    font-size: 40px;
+}
+.reah-titla a{
+    font-size: 22px;
+}
+.container-fluid img{
+    width: 10%;
+    margin-left: 80px;
+}
+.navbar-nav{
+    margin-right: 80px;
+    
+}
+.navbar-nav li a{
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 700;
+ 
+}
+
+.icons{
+position: relative;
+right:65px;
+text-transform: capitalize;
+font-size: 18px;
+font-weight: 700;
+
+}
+.icons a{
+    text-decoration: none;
+    margin-left: 10px;
+}
+.main-images img{
+    height: 650px;
+}
+.main-info h1{
+    font-size:55px;
+    margin-top: -490px;
+}
+.main-info p{
+     font-size: 25px;
+     margin-top: 10px;
+}
+
+
+.footer-log img{
+    width: 13%;
+    margin-left:90px;
+ 
+    }
+    .our-location{
+        width:13%;
+        display: inline-block;
+       position: relative;
+       left:80px;
+        margin-top: 20px;
+     
+    }
+   .our-location a{
+
+    font-size:20px;
+   }
+
+    .info{
+        display: inline-block;
+        width: 35%;
+        position: relative;
+        left:100px;
+        top:-35px;
+    
+    }
+    .google img{
+        width: 60%;
+        margin-left: 80px;
+        margin-top: -20px;
+    }
+    .app img{
+        width: 60%;
+        margin-top: -20px;
+    }
+
+}
+</style>
+<!-- /////main start -->
+<main>
+  <section class="main-img">
+    <div class="main-backgound-img">
+      <div class="main-images">
+        <img src="{% static 'images\abstract-wave-background_41084-391.avif' %}">
+      </div>
+      <div class="main-info">
+        <h1 class="text-uppercase fw-bold">{{ecommerce_service1.title}}
+        </h1>
+        <p class="text-capitalize">{{ecommerce_service1.description}}</p>
+        <button class="main-button text-uppercase fw-bold">{{ecommerce_service1.button_text}}</button>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="busines">
+    <div class="busines-info">
+      <p>{{ecommerce_card_info.title}}</p>
+    </div>
+    <div class="busines-image2">
+      <img src="{{ecommerce_card_info.image.url}}">
+    </div>
+    <div class="busines-image1">
+      <img src="{{ecommerce_info.card_image.url}}">
+    </div>
+    
+    <div class="steps">
+      <div class="steps-info">
+        <h1>{{ecommerce_info.title}}</h1>
+      </div>
+<br><br><br><br>
+
+
+      {% for card in ecommerce_infoform %}
+      <div ><h1>{{card.title}}</h1>
+        <p>{{card.description}}</p>
+      </div>
+     {% endfor %}
+    </div>
+  </section>
+
+
+  <section class="features">
+    <div class="features-info">
+      <h1>{{ecommerce_card_information.title}}</h1>
+    </div>
+
+    {% for card1 in ecommerce_card %}
+    <div class="features-image1 shadow-lg">
+      <img src="{{card1.card_image.url}}">
+      <figure>
+        <h1>
+        {{card1.card_title}}</h1>
+        <p>
+         {{card1.card_description}}</p>
+      </figure>
+    </div>
+
+{% endfor %}
+    
+  </section>
+
+
+
+  <section class="partner">
+    <div class="partner-info">
+      <h1>{{ecommerce_slider.title}}</h1>
+    </div>
+    <div class="owl">
+      <div class="owl-carousel owl-theme my-slids">
+        {% for object in ecommerce_company_slider %}
+        <div class="item slide-items"><img src="{{object.image_slider.url}}" class="shadow"
+            style="width:70%; border: rgb(255, 253, 253) 2px solid;"></div>
+        {% endfor %}
+    </div>
+
+  </section>
+  <section class="marquee">
+    <div class="marquee-info">
+      <h1>{{ecommerce_review.title}}</h1>
+    </div>
+    <marquee direction="left">
+      <div class="marquee-background d-flex">
+       {% for review in ecommerce_review_card %}
+        <div class="marquee-1 shadow">
+          <img src="{{review.card_image.url}}">
+          <figure>
+            <h1>{{review.card_title}}</h1>
+            <p>{{review.card_descripion}}</p>
+          </figure>
+        </div>
+
+       {% endfor %}
+      </div>
+    </marquee>
+    </div>
+
+    <marquee direction="right">
+      <div class="marquee-background d-flex">
+
+        <div class="marquee-1 shadow">
+          <img src="{% static 'images\all-that-dips-1.png' %}">
+          <figure>
+            <p>One of the best aggregators that I have been<br> dealing with for almost a year now.<br> What I find
+              best about them is the pricing and<br> back-end delivery support.<br> offers support like them. Highly
+            </p>
+          </figure>
+        </div>
+
+
+        <div class="marquee-1 shadow">
+          <img src="{% static 'images\WhatsApp-Image-2023-07-24-at-10.23.29-PM.jpeg">
+          <figure>
+            <p>One of the best aggregators that I have been<br> dealing with for almost a year now.<br> What I find
+              best about them is the pricing and<br> back-end delivery support.<br> offers support like them. Highly
+            </p>
+        </div>
+
+
+        <div class="marquee-1 shadow">
+          <img src="{% static 'images\qw.jpg' %}">
+          <figure>
+            <p>One of the best aggregators that I have been<br> dealing with for almost a year now.<br> What I find
+              best about them is the pricing and<br> back-end delivery support.<br> offers support like them. Highly
+            </p>
+          </figure>
+        </div>
+
+
+        <div class="marquee-1 shadow">
+          <img src="{% static 'images\dr-vaidyas-1-2048x504-1.png' %}">
+          <figure>
+            <p>One of the best aggregators that I have been<br> dealing with for almost a year now.<br> What I find
+              best about them is the pricing and<br> back-end delivery support.<br> offers support like them. Highly
+            </p>
+          </figure>
+        </div>
+
+
+        <div class="marquee-1 shadow">
+          <img src="{% static 'images\Banner_1_36e3eed0-c2bc-4bdd-b9ff-0d3a277e128b.webp' %}">
+          <figure>
+            <p>One of the best aggregators that I have been<br> dealing with for almost a year now.<br> What I find
+              best about them is the pricing and<br> back-end delivery support. No other aggregator<br> offers support
+              like them. Highly</p>
+          </figure>
+        </div>
+    </marquee>
+  </section>
+
+
+
+  <section class="trust">
+    <div class="trust-info">
+      <h1>Trusted by thousands</h1>
+      <p>The preferred choice of more than 25,000+ businesses
+      </p>
+    </div>
+
+
+    <div class="trust-images shadow">
+      <img src="{% static 'images\ll1.png' %}">
+    </div>
+
+    <div class="trust-images shadow">
+      <img src="{% static 'images\ll2.png' %}">
+    </div>
+
+    <div class="trust-images shadow">
+      <img src="{% static 'images\ll3.png' %}">
+    </div>
+
+    <div class="trust-images shadow">
+      <img src="{% static 'images\ll6.png' %}">
+    </div>
+
+    <div class="trust-images shadow">
+      <img src="{% static 'images\ll99.png' %}">
+    </div>
+
+    <div class="trust-images shadow">
+      <img src="{% static 'images\ll98.png' %}">
+    </div>
+  </section>
+
+
+
+  <section class="suggestion">
+
+    <div class="suggestion-title">
+      <h1>Suggested Reads</h1>
+    </div>
+    <div class="suggestion-images shadow">
+      <img src="{% static 'images\WhatsApp-Image-2023-09-06-at-4.51.49-PM.jpeg' %}">
+      <figure>
+        <h1>ECommerce Shipping</h1>
+        <a href="">3 Delivery Challenges With Same-Day Delivery</a>
+        <p>Even though more and more retail stores are now shifting to eCommerce platforms, some still</p>
+        <a href="" class="text-primary">Continue Reading</a>
+      </figure>
+    </div>
+
+
+
+    <div class="suggestion-images shadow">
+      <img src="{% static 'images\WhatsApp-Image-2023-09-06-at-4.49.58-PM.jpeg">
+      <figure>
+        <h1>ECommerce Shipping</h1>
+        <a href="" class="a-imge1">7 Ways How Next Day Delivery...</a>
+        <p>Gaining customer loyalty is the brand equivalent of the proverbial “holy grail” in the brutally</p>
+
+      </figure>
+      <a href="" class="text-primary">Continue Reading</a>
+    </div>
+
+
+
+    <div class="suggestion-images shadow">
+      <img src="{% static 'images\Banners-to-upload-80.png' %}">
+      <figure>
+        <h1>ECommerce Shipping</h1>
+        <a href="">9 Ways How Logistics Companies Manage...</a>
+        <p>Next day delivery has established itself as the industry standard for logistical effectiveness in the</p>
+        <a href="" class="text-primary">Continue Reading</a>
+      </figure>
+    </div>
+
+
+    <div class="suggestion-button">
+      <a href="">read more</a>
+    </div>
+  </section>
+
+
+  <section class="question">
+    <div class="question-title">
+      <h1>Frequently Asked Questions</h1>
+    </div>
+    <div class="collab-info">
+      <button class="collapsible">How do I get my COD remittance?</button>
+      <div class="content">
+        <p>
+          Shipyaari offers Express COD remittance plans, and you have option of choosing even D+1 cycle (i.e. in one day
+          after the day payments are collected).
+          Other Standard offerings are D+3, D+7, D+10.
+
+          For further details you can reach out to our service desk anytime between 6 a.m. to 12 midnight for any
+          queries over this.
+          Connect with us on business@shipyaari.com or +91 9136996666</p>
+      </div>
+    </div>
+
+
+    <div class="collab-info">
+      <button class="collapsible"> When will I get my refund?</button>
+      <div class="content">
+        <p>
+
+          Based on the reason for your cancellation, the following are the time frames provided, for reimbursement of
+          the amount to your wallet:
+
+          > Cancelled shipments refunds: 5 – 7 working days, after cancellation by the client.
+          > Lost shipment refunds: 12 – 15 days, after verification of the package as “lost”.
+          > Weight dispute Refund: 5-7 Days, after confirmation from both parties, “Seller” and “Courier”.
+          > Account Close Refund : 15 Days, to reimburse the amount to your bank account.</p>
+      </div>
+    </div>
+
+
+    <div class="collab-info">
+      <button class="collapsible">How can Shipyaari solve my RTO problems</button>
+      <div class="content">
+        <p>
+
+          Shipyaari has a dedicated and resourceful NDR team, that comes into play. They closely monitor the issue that
+          causes RTO, resolve them by coordinating with courier partner and consignee. This practice alone reduces RTO
+          by 3-5%.</p>
+      </div>
+    </div>
+
+    <div class="collab-info">
+      <button class="collapsible">How do I start shipping with Shipyaari?</button>
+      <div class="content">
+        <p>
+
+          With Shipyaari you can sign up within 2 minutes. Simply go to Sign-up > KYC verification > Place order > Start
+          Shipping
+
+          It is that simple! Sign-up today</p>
+      </div>
+    </div>
+
+
+    <div class="collab-info">
+      <button class="collapsible">How can I add multiple GST numbers for multiple pickup addresses?</button>
+      <div class="content">
+        <p>
+
+
+          With Shipyaari you can get option of multiple pickup addresses. You can easily add multiple GST numbers and
+          pick up addresses.
+
+          > Simply, go to settings and click on KYC details..
+          > Click on the add new GST number.
+          > Enter new GST number.
+          > Click on Update KYC Details.
+
+          There is another option, where you can add any required GST number while processing an order on the Shipyaari
+          dashboard.</p>
+      </div>
+    </div>
+
+
+    <div class="collab-info">
+      <button class="collapsible"> How can I track my shipment?</button>
+      <div class="content">
+        <p>
+
+          Tracking your shipments is super easy with Shipyaari:
+
+          Log in to your account.
+          Click the “Tracking” icon on the top right of the dashboard.
+          Put in the AWB number/ Tracking number, you want to track.
+          You will be able to see the current status of your all our orders.
+          To know more, connect with us on care@shipyaari.com or +91 9136996666</p>
+      </div>
+    </div>
+
+
+
+    <div class="collab-info">
+      <button class="collapsible">Why my orders are not getting generated?</button>
+      <div class="content">
+        <p>
+
+
+          The following are a few common reasons why your order usually does not get generated.
+
+          Due to low balance in wallet. You can check your wallet balance in “My profile” tab on the dashboard.
+          Due to wrong pick up or delivery pin codes entered at the time of booking.
+          Wrong service or courier selection.
+          Incomplete pickup, delivery or product information.
+          If still you are facing issues, connect with us on business@shipyaari.com or +91 9136996666</p>
+      </div>
+    </div>
+
+
+    <div class="collab-info">
+      <button class="collapsible">Can payment mode be changed after shipment gets picked up?</button>
+      <div class="content">
+        <p>
+
+
+
+          Yes, Shipyaari provides an option to change payment mode after the shipment has been picked. You can change
+          the payment mode from “COD” to “Prepaid”, and from “Prepaid” to “COD”.
+
+          Seller can either raise a ticket from the Shipyaari portal to request change of payment mode or they can write
+          an e-mail to care@shipyaari.com where our experts will get in touch with you.</p>
+      </div>
+    </div>
+  </section>
+
+  <Section class="reach">
+    <div class="reah-titla">
+      <h1>Like what you see? Take the first step and reach out.</h1>
+      <a href="">read more</a>
+    </div>
+  </Section>
+</main>
+
+
+
+<script src="{% static 'js_delta/collab.js' %}"> </script>
+
+<script src="{% static 'js_delta/slider.js' %}"></script>
+
+
+
+</body>
+
+</html>
+{% endblock %}

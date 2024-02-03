@@ -1,0 +1,494 @@
+/* main style */
+
+
+/* Styling for the marquee */
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+}
+.middle7{
+  text-align: center;
+}
+          .middle7 {
+            margin-top: 50px;
+            background-color:navy;
+          }
+          .middle7 h1{
+          padding-top: 40px;
+          
+          color: white;
+        
+          }
+          .middle7 img{
+         position: relative;
+         left:60px;
+         width:15%;
+         
+         
+          }
+          .middle7 button{
+            background-color:orangered;
+            color:white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 30px;
+            width: 150px;
+           
+            margin-bottom: 30px;
+          }
+            .middle7 button a{
+              text-decoration: none;
+              font-size: 20px;
+              color: black;
+        }
+
+        .middle7 button:hover {
+            background-color:white;
+        }
+.marquee-content {
+  white-space: nowrap;
+  animation: marquee 12s linear infinite; /* Adjust duration and timing function */
+}
+
+/* Animation for the marquee */
+@keyframes marquee {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+.middle1 h1{
+  text-align: center;
+  margin-top:80px;
+
+}
+.middle1 img{
+    width: 100%;
+    height:200px;
+  }
+  .middle2{
+    background-color: white;
+  }
+  .middle2 h1{
+    text-align: center;
+    padding-top: 20px;
+  }
+  .middle2 img{
+    width:80%;
+    height:40%;
+    margin-left: 150px;
+    border-radius: 50px;
+  }
+  
+ 
+  .middle3 {
+    background-color: white;
+    margin-bottom: -21px;
+    }
+
+  .middle3 h1{
+    margin-top: 20px;
+    text-align: center;
+    }
+   .middle3 p{
+    margin: 20px 150px;
+   }
+   .middle3 h6{
+    margin: 20px 150px;
+    font-size: 40px;
+    color: #011f61;
+    text-transform: capitalize;
+   }
+    .middle4{
+      background-color: white;
+     
+
+    }
+    .middle4 h1{
+      padding-top: 20px;
+      text-align: center;
+    
+    }
+    .middle5{
+      padding-top: 20px;
+      display:inline-flex;
+    }
+    .middle5 h3{
+      padding-left: 110px;
+      color: #011f61;
+    }
+    .middle5 p{
+      padding-left: 110px;
+      padding-bottom: 30px;
+      color:red;
+    }
+    .middle6 h1{
+      padding-top: 40px;
+      text-align: center;
+    }
+    .middle6 p{
+      text-align: center;
+    }
+  
+
+        .middle8 {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+
+.middle9 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 10px;
+    justify-content: center;
+    
+    
+}
+
+.team-member {
+    position: relative; 
+    background-color: #f9f9f9;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-left: 10px;
+    height: auto;
+}
+
+.team-member img {
+    max-width:80%;
+    border-radius: 10%;
+    margin-bottom: 10px;
+}
+
+.team-member h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+.job{
+    padding-top: 0%;
+    margin-top: 0px;
+    color: #555;
+}
+
+
+.social-icons {
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    margin-top: 315px;
+    margin-left: 70px;
+    padding-bottom: 20px;
+}
+
+.social-icons a {
+    display: inline-block;
+    padding: 5px;
+    background-color: #333;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 16px;
+    margin-top: 1px;
+}
+
+.social-icons a:hover {
+    background-color: #555;
+}
+.btn1{
+  width: 200px;
+  height: 40px;
+  justify-items: center;
+  margin-top: 30px;
+  margin-left: 580px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  background-color: orangered;
+}
+.btn1 a{
+ font-size: 20px;
+ color: black;
+ text-decoration: none;
+}
+
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-content {
+  white-space: nowrap;
+  animation: marquee 12s linear infinite; /* Adjust duration and timing function */
+}
+.navbar{
+  margin-top: -5px;
+}
+.marquee-content img{
+  width: 20%;
+  border: 1px solid gray;
+  margin-left: 20px;
+}
+/* Pause animation on hover */
+.marquee-container:hover .marquee-content {
+  animation-play-state: paused;
+}
+/* Animation for the marquee */
+@keyframes marquee {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+.count{
+  margin-top:50px;
+  background-color: rgb(24, 171, 184);
+}
+@media(max-width:600px){
+
+
+  .middle7 {
+    margin-top: 50px;
+    background-color:navy;
+  
+ 
+  }
+  .middle{
+    text-align: center;
+  }
+  .middle7 h1{
+  padding-top: 40px;
+
+  color: white;
+  margin-left: 10px;
+  }
+  .middle7 img{
+  width:30%;
+position: relative;
+left:10px;
+
+  }
+  .middle7 button{
+    background-color:orangered;
+    color:white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 30px;
+    width: 150px;
+  
+    margin-bottom: 30px;
+}
+.middle1 h1{
+  margin-top: 50px;
+}
+.count-title h1{
+padding-top: 30px;
+font-size: 30px;
+}
+.middle1 img{
+  width: 100%;
+  height: 50px;
+}
+  .footer{
+    padding-bottom: 20px;
+    background-color: rgb(79, 147, 189); 
+}
+.container-fluid img{
+    width: 30%;
+    margin-left: 20px;
+}
+.navbar{
+    margin-top: -8px;
+    background-color:  rgb(58, 149, 205);
+}
+
+.main-images img{
+    width: 100%;
+    height:400px;
+}
+
+.main-info p{
+    text-align: center;
+    margin: 0px 10px;
+}
+
+.footer{
+    padding-bottom: 20px;
+    background-color:  rgb(58, 149, 205);
+}
+
+.footer-log img{
+    width: 30%;
+    padding-top: 30px;
+    margin-left: 30px;
+}
+.our-location h1{
+    margin-top: 20px;
+    font-size:20px;
+    margin-left: 30px;
+    font-weight: 700;
+    color: #c1e6f7;
+}
+.our-location a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: white;
+}
+.our-location a i{
+    text-decoration: none;
+
+    width:5px;
+    color: white;
+    font-size: 20px;
+}
+.our-location{
+    width:48%;
+    display:inline-block;
+}
+.sign p{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size:20px;
+    margin-top: 30px;
+    color: #c1e6f7;
+}
+.sign input{
+    margin-left:90px;
+    padding: 10px 10px;
+    text-transform: capitalize;
+    width: 55%;
+
+    position: relative;
+    left:5px;
+}
+.sign button{
+    padding: 10px 10px;
+    background-color: #c1e6f7;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+.google img{
+    width:80%;
+}
+.app img{
+    width: 80%;
+}
+.app,.google{
+    margin-top: 30px;
+    display: inline-block;
+    width: 47%;
+position: relative;
+left:25px;
+   
+}
+.footer-title p{
+    margin-top: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    font-size: 18px;
+} 
+
+.footer-title p{
+    margin-top: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    font-size: 18px;
+}
+  .middle2 img{
+    width:80%;
+    height:40%;
+    margin-left: 50px;
+    border-radius: 50px;
+  }
+ 
+ 
+
+  .middle3 h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+    color: rgb(19, 142, 142);
+    }
+    .middle3 p{
+     margin:10px 20px;
+    }
+    .middle3 h6{
+      margin: 20px 30px;
+      text-transform: capitalize;
+      font-size: 30px;
+      color: rgb(19, 142, 142);
+
+    }
+    .middle4{
+      background-color: white;
+
+    }
+   
+    .count{
+      margin-top:50px;
+      background-color: rgb(24, 171, 184);
+    }
+    .middle4 h1{
+      padding-top: 20px;
+      text-align: center;
+    
+    }
+    .middle5{
+      padding-top: 20px;
+      display:inline-flex;
+      flex-direction: column;
+    }
+    .middle5 h3{
+      padding-left: 110px;
+      color: #011f61;
+      margin-left: 100px;
+    }
+    .middle5 p{
+      padding-left: 200px;
+      padding-bottom: 30px;
+      color:red;
+    }
+    .middle6 h1{
+      text-align: center;
+      margin-left: 10px;
+    }
+    .middle6 p{
+      text-align: center;
+    }
+   
+
+        .middle8 {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+  }
+

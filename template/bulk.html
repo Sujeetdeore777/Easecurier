@@ -1,0 +1,1031 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block contant %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+
+}
+.Calculator{
+    margin-top:90px;
+    text-align: center;
+}
+.Calculator h1{
+    color: rgb(36, 160, 148);
+    font-size: 30px;
+}
+.Calculator p{
+color: 18px;
+color: black;
+margin: 5px 20px;
+}
+.Calculator button{
+    padding: 10px 10px;
+    text-transform: uppercase;
+    background-color: rgb(70, 204, 234);
+    bottom: 2px white solid;
+    color: white;
+}
+.globally-info h1{
+    text-align: center;
+    font-size: 25px;
+    color: #7dc1e0;
+}
+.globally-info p{
+    font-size: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 700;
+    color:  rgb(9, 85, 132);
+}
+.globally-images1{
+ margin-left: 20px;
+ margin-top: 20px;
+}
+.globally-images1{
+    width: 35%;
+    display: inline-table;
+    height: 130px;
+    position: relative;
+    left:50px;
+}
+.globally-images1 img{
+padding-top: 10px;
+margin-left: 10px;
+width: 35%;
+}
+.globally-images1 h6{
+ margin-top: 5px;
+    margin-left: 10px;
+
+    }
+.globally-images1:hover{
+    background-color: rgb(82, 199, 232);
+}
+.container-fluid img{
+    width: 30%;
+}
+.navbar{
+    background-color:  rgb(40, 129, 184);
+}
+
+.main-images img{
+    width: 100%;
+    height:400px;
+}
+.main-info{text-align: center;}
+.main-info h1{
+ margin-top: -340px;
+
+ font-size: 38px;
+}
+.main-info p{
+
+    margin: 0px 10px;
+}
+.main-button{
+    margin-top: 20px;
+
+    padding: 10px 10px;
+    border-radius: 5px 5px;
+    border: white solid;
+    background-color: rgb(23, 213, 223);
+ color: rgb(7, 94, 118);
+}
+.busines{
+    margin-top: 80px;
+}
+.busines-info p{
+    margin: 20px 40px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing:2px;
+    text-transform: capitalize;
+ color: rgb(10, 197, 197);
+}
+.busines-image1 img{
+width:80%;
+margin-top: 30px;
+margin-left:50px;
+}
+.features-image3{
+    background-color: white;
+    width: 70%;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+.features-image3 img{
+    width: 100%;
+    height:200px
+}
+.features-image3 h1{
+   font-size: 18px;
+   padding-bottom: 10px;
+}
+.features-image3 p{
+    font-size:13px;
+    text-align: center;
+    padding-bottom: 10px;
+ }
+.busines-image2 img{
+    width: 70%;
+    margin-left:70px;
+    margin-top: 40px;
+    }
+    .steps{
+        margin-top: 30px;
+    }
+    .steps-info h1{
+        margin-left: 100px;
+        font-size:35px;
+        color: rgb(7, 123, 123);
+
+    }
+
+    .step-1  h1{
+        margin-top: 20px;
+        margin-left:20px;
+        font-size: 20px;
+        color: rgb(11, 134, 140);
+    }
+    .step-1 p{
+      
+    font-size: 18px;
+    margin: 0px 20px;
+    }
+    .step-2  h1{
+        margin-top: 20px;
+        margin-left:20px;
+        font-size: 20px;
+        color: rgb(11, 134, 140);
+    }
+    .step-2 p{
+   
+    font-size: 18px;
+    margin: 0px 20px;
+    }
+    .step-3  h1{
+        margin-top: 20px;
+        margin-left:20px;
+        font-size: 20px;
+        color: rgb(11, 134, 140);
+    }
+    .step-3 p{
+    
+        font-size: 18px;
+        margin: 0px 20px;
+    }
+    .features{margin-top: 30px;
+        padding-bottom: 80px;
+        background-color: rgb(228, 240, 247);
+    }
+    .features-info h1{
+    
+   padding-top: 20px;
+       text-align: center;
+     font-weight:700;
+}
+
+.features-image1{
+    background-color: white;
+    width: 70%;
+    margin-top: 40px;
+    margin-left: 90px;
+    border-radius: 5px;
+    height: 450px;
+}
+.features-image1 img{
+    width: 100%;
+    height: 300px;
+}
+.features h1{
+
+    text-align: center;
+    margin-top:5px;
+    font-size: 25px;
+    color: rgb(11, 134, 140);
+}
+.features p{
+    text-align: center;
+    margin: 0px 50px;
+}
+.partner{
+    margin-top: 50px;
+}
+.partner-info h1{
+    text-align: center;
+    color: rgb(10, 175, 184);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.owl{
+    margin-top: 30px;
+ width: 90%;
+ margin-left:50px;
+}
+.marquee{
+    background-color: lightskyblue;
+    padding-bottom: 30px;
+}
+.marquee-info h1{
+    padding-top: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+.marquee-1{
+    background-color: white;
+    width:68%;
+    padding-bottom: 20px;
+    margin-left: 30px;
+
+}
+.marquee-1 img{
+    width: 40%;
+    padding-top:30px;
+    margin-left: 30px;
+}
+.marquee-1 h1{
+    font-size:18px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.marquee-1  p{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+
+
+
+.marquee-2{
+    background-color: white;
+    width:80%;
+height:320px;
+   margin: 10px 20px;
+
+}
+.marquee-2 img{
+    width: 40%;
+    padding-top:30px;
+    margin-left: 30px;
+}
+
+.marquee-2  p{
+ margin: 10px 30px;
+}
+.trust-info h1{
+    text-transform: capitalize;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(11, 137, 137);
+}
+.trust-info{
+    text-transform: capitalize;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+.trust-images{
+    background-color: white;
+    width:40%;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+.trust-images img{
+    width: 90%;
+}
+.trust-images{
+    display: inline-block;
+    width:26%;
+    margin-left: 25px;
+}
+.trust-images:hover{
+    background-color: rgb(199, 244, 244);
+}
+
+.suggestion-title h1{
+    text-align: center;
+margin-top:80px;
+font-size: 30px;
+text-transform: capitalize;
+font-weight: 700;
+}
+.suggestion-images{
+    margin-top: 50px;
+    width: 80%;
+    margin-left: 50px;
+    padding-bottom: 20px;
+}
+.suggestion-images img{
+    width: 100%;
+}
+.suggestion-images h1{
+margin-left: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.suggestion-images p{
+    margin: 10px 20px;
+}
+.suggestion-images a{
+    text-decoration: none;
+  margin-left: 20px;
+  margin-top: 30px;
+    color: black;
+}
+.suggestion-button {
+    margin-top: 50px;
+    text-align: center;
+    text-transform:uppercase ;
+    font-weight: bold;
+
+}
+.suggestion-button a{
+    padding: 20px  20px;
+    background-color: lightskyblue;
+    text-decoration: none;
+    color: black;
+}
+
+.collapsible {
+    background-color: #c1e6f7;
+    color: rgb(8, 8, 8);
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+ margin-left:55px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  .collab-info{
+    margin-top: 20px;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    width: 80%;
+    margin-left: 50px;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #ffffff;
+  }
+  .question-title h1{
+    text-align: center;
+    margin-top: 80px;
+    color: rgb(7, 102, 133);
+  }
+  .reach{
+    background-color: #c1e6f7;
+    margin-top: 30px;
+    padding-bottom:50px;
+  }
+  .reah-titla{
+    padding-top: 30px;
+    text-align: center;
+  }
+  .reah-titla h1{
+    font-size:30px;
+    margin: 10px 20px;
+  }
+  .reah-titla a{
+    position: relative;
+    top:20px;
+    background-color: black;
+    padding: 10px 30px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .container-fluid img{
+    width: 30%;
+    margin-left: 20px;
+}
+.navbar{
+    margin-top: -8px;
+    background-color:  rgb(239, 137, 12);
+}
+
+.main-images img{
+    width: 100%;
+    height:400px;
+}
+.main-info h1{
+ margin-top: -340px;
+ text-align: center;
+ font-size: 38px;
+}
+.main-info p{
+    text-align: center;
+    margin: 0px 10px;
+}
+
+.footer{
+    padding-bottom: 20px;
+    background-color:  rgb(0, 0, 0);
+}
+
+.footer-log img{
+    width: 30%;
+    padding-top: 30px;
+    margin-left: 30px;
+}
+.our-location h1{
+    margin-top: 20px;
+    font-size:20px;
+    margin-left: 30px;
+    font-weight: 700;
+    color: #eea909;
+}
+.our-location a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: rgb(255, 255, 255);
+}
+.our-location a i{
+    text-decoration: none;
+
+    width:5px;
+    color: white;
+    font-size: 20px;
+}
+.our-location{
+    width:48%;
+    display:inline-block;
+}
+.sign p{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size:20px;
+    margin-top: 30px;
+    color: #eea909;
+}
+.sign input{
+    margin-left:90px;
+    padding: 10px 10px;
+    text-transform: capitalize;
+    width: 55%;
+
+    position: relative;
+    left:5px;
+}
+.sign button{
+    text-decoration: none;
+    padding: 10px 10px;
+    background-color:  #eea909;;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+.google img{
+    width:80%;
+}
+.app img{
+    width: 80%;
+}
+.app,.google{
+    margin-top: 30px;
+    display: inline-block;
+    width: 47%;
+position: relative;
+left:25px;
+   
+}
+.footer-title p{
+    margin-top: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    font-size: 18px;
+} 
+
+.footer-title p{
+    margin-top: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    font-size: 18px;
+}
+@media(min-width:1200px){
+    .container-fluid img{
+        width:10%;
+   margin-left: 80px;
+        padding-top: 10px;
+    }
+    .navbar-nav{
+        margin-right: 80px;
+        
+    }
+    .navbar-nav li a{
+        text-transform: capitalize;
+        font-size: 18px;
+        font-weight: 700;
+     
+    }
+    
+    .icons{
+position: relative;
+right:65px;
+text-transform: capitalize;
+font-size: 18px;
+font-weight: 700;
+
+    }
+    .Calculator{
+        margin-top: 280px;
+    }
+    .Calculator h1{
+       font-size: 40px;
+    } 
+    .Calculator p{
+        font-size: 22px;
+        margin: 0px 200px;
+     } 
+     .Calculator button{
+        font-size: 18px;
+        color: black;
+        margin-top: 30px;
+        font-weight: bold;
+     }
+    .icons a{
+        text-decoration: none;
+        margin-left: 10px;
+    }
+    .main-images img{
+        height: 650px;
+    }
+    .main-info h1{
+        font-size:55px;
+        margin-top: -490px;
+    }
+    .main-info p{
+         font-size: 25px;
+         margin-top: 10px;
+    }
+ 
+    .busines-info p{
+        font-size: 40px;
+     
+    }
+    .globally-info h1{
+        font-size: 40px;
+    }
+    .globally-info p{
+        font-size:22px;
+    }
+    .busines{
+
+        margin-left: 40px;
+    }
+   
+   .busines-info,.busines-image2{
+    display: inline-block;
+    width:49%;
+   }
+  
+   
+   .busines-image2 img{
+    width: 80%;
+    margin-left: 30px;
+   
+   }
+   .globally-images1{
+    width:24%;
+    display: inline-table;
+    position: relative;
+    left:90px;
+    text-align: center;
+   }
+   
+  .globally-images1  h1{
+    margin-top: 10px;
+  }
+  
+   .globally-images1 img{
+    width:25%;  
+    margin-left:20px;
+
+}
+.busines-image1,.steps{
+    margin-top: 80px;
+    display: inline-block;
+    width: 40%;
+}
+.steps{
+    width:50%;
+}
+.step-1 h1{
+    margin-left: 100px;
+}
+.step-1 p{
+    margin-left:100px;
+}
+.step-2 h1{
+    margin-left: 100px;
+}
+.step-2 p{
+    margin-left:100px;
+}
+.step-3 h1{
+    margin-left: 100px;
+}
+.step-3 p{
+    margin-left:100px;
+}
+.features-info h1{
+    font-size: 30px;
+    padding-top: 30px;
+   
+}
+.features-info p{
+    font-size:18px;
+
+    margin: 0px 220px;
+}
+.features-image3 img{
+    height: 300px;
+}
+.features-image3{
+  position: relative;
+  left:30px;
+    width:25%;
+    display: inline-table;
+
+}
+.features-image3 h1{
+    font-size:20px;
+}
+.features-image3 p{
+    margin: 5px 5px;
+}
+.images4{
+ margin-left:545px;
+}
+.owl{
+    width: 75%;
+    position: relative;
+    left:180px;
+}
+.trust-info h1{
+    font-size: 40px;
+}
+.trust-info p{
+    font-size: 30px;
+}
+.trust-images{
+    width: 10%;
+position: relative;
+left:230px;
+}
+.trust-images img{
+    width:90%;
+}
+.suggestion-title h1{
+    font-size: 
+    40px;
+}
+.suggestion-images{
+ height: 410px;
+    width:24%;
+    position: relative;
+    left:90px;
+    display: inline-table;
+}
+.suggestion-images p{
+    font-size: 20px;
+}
+.suggestion-button a{
+    font-size:20px;
+}
+.question-title h1{
+    margin-top: 80px;
+    font-size: 40px;
+}
+.collab-info{
+ width:49%;
+ display:inline-block;
+   
+}
+.reah-titla h1{
+    font-size: 40px;
+}
+.reah-titla a{
+    font-size: 22px;
+}
+.main-images img{
+    height: 650px;
+}
+.main-info h1{
+    font-size:55px;
+    margin-top: -490px;
+}
+.main-info p{
+     font-size: 25px;
+     margin-top: 10px;
+}
+
+
+.footer-log img{
+    width: 13%;
+    margin-left:90px;
+ 
+    }
+    .our-location{
+        width:13%;
+        display: inline-block;
+       position: relative;
+       left:80px;
+        margin-top: 20px;
+     
+    }
+   .our-location a{
+
+    font-size:20px;
+   }
+
+    .info{
+        display: inline-block;
+        width: 35%;
+        position: relative;
+        left:100px;
+        top:-35px;
+    
+    }
+    .google img{
+        width: 60%;
+        margin-left: 80px;
+        margin-top: -20px;
+    }
+    .app img{
+        width: 60%;
+        margin-top: -20px;
+    }
+
+}
+</style>
+<!-- /////main start -->
+<main>
+  <section class="main-img">
+    <div class="main-backgound-img">
+      <div class="main-images">
+        <img src="{{bulk_service.image}}">
+      </div>
+      <div class="main-info">
+        <h1 class="text-uppercase fw-bold">{{bulk_service.title}}
+        </h1>
+        <p class="text-capitalize">{{bulk_service.description}}</p>
+        <button class="main-button text-uppercase fw-bold" href="{{bulk_service.button_url}}">{{bulk_service.button_text}}</button>
+      </div>
+    </div>
+  </section>
+  <section class="Calculator">
+    <div class="Calculator-title">
+      <h1>{{bulk_service_info.title}}</h1>
+      <p>{{bulk_service_info.description}}
+      </p>
+      <button href="{{bulk_service_info.button_url}}">{{bulk_service_info.button_text}}</button>
+    </div>
+  </section>
+
+  <section class="busines">
+    <div class="globally-info">
+      <h1>{{bulk_card_info.title}}</h1>
+      <p>{{bulk_card_info.description}}</p>
+
+    </div>
+
+
+
+    
+    {% for obj5 in bulk_card_data %}
+    <div class="globally-images1 ">
+      <img src="{{obj5.image}}">
+      <h6>{{obj5.title}}</h6>
+    </div>
+    {% endfor %}
+
+    
+
+  </section>
+
+
+    <div class="busines-image1">
+      <img src="{{bulk_info.card_image}}">
+    </div>
+
+    <div class="steps">
+      <div class="steps-info">
+        <h1>{{bulk_info.title}}</h1>
+      </div>
+  
+     
+      <div class="step-1">
+        {% for obj30 in bulk_info1 %}
+        <h1>{{obj30.title}}</h1>
+        <p>{{obj30.description}}</p>
+        {% endfor %}
+      </div>
+    
+    </div>
+     
+  </section>
+
+
+  <section class="features">
+    <div class="features-info">
+      <h1>{{bulk_card_information.title}}</h1>
+      <p>{{bulk_card_information.description}}</p>
+    </div>
+
+
+
+{% for obj55 in bulk_card %}
+    <div class="features-image3 shadow-lg">
+      <img src="{{obj55.card_image}}">
+      <figure>
+        <h1>{{obj55.card_title}}
+        </h1>
+        <p>{{obj55.card_description}}</p>
+      </figure>
+    </div>
+    {% endfor %}
+
+
+
+
+
+
+  </section>
+
+
+
+  <section class="partner">
+    <div class="partner-info">
+      <h1>{{bulk_slider.title}}</h1>
+    </div>
+    <div class="owl">
+      <div class="owl-carousel owl-theme my-slids">
+
+        
+        {% for obj57 in bulk_company_slider %}
+        <div class="item slide-items"><img src="{{obj57.image_slider}}" class="shadow"
+            style="width:70%; border: rgb(255, 253, 253) 2px solid;"></div>
+            {% endfor %}
+
+
+
+    </div>
+
+  </section>
+  <section class="marquee">
+    <div class="marquee-info">
+      <h1>{{bulk_review.title}}</h1>
+    </div>
+    <marquee direction="left">
+      <div class="marquee-background d-flex">
+
+        {% for obj58 in bulk_review_card %}
+        <div class="marquee-1 shadow">
+        
+          <img src="{{obj58.card_image}}">
+          <figure>
+            <h1>{{obj58.card_title}}</h1>
+            <p>{{obj58.card_description}}</p>
+          </figure>
+         
+        </div>
+
+        {% endfor %}
+
+      </div>
+    </marquee>
+    </div>
+
+    <marquee direction="right">
+      <div class="marquee-background d-flex">
+
+        
+        {% for obj59 in bulk_testimonials %}
+        <div class="marquee-2 shadow">
+          <img src="{{obj59.image}}">
+          <figure>
+            <p>{{obj59.description}}
+            </p>
+          </figure>
+        </div>
+        {% endfor %}
+
+
+
+    </marquee>
+  </section>
+
+
+
+  <section class="trust">
+    <div class="trust-info">
+      <h1>{{bulk_company_info.title}}</h1>
+      <p>{{bulk_company_info.description}}
+      </p>
+    </div>
+
+    
+    {% for obj60 in bulk_company_logo %}
+    <div class="trust-images shadow">
+      <img src="{{obj60.image}}">
+    </div>
+    {% endfor %}
+
+
+  </section>
+
+
+
+  <section class="suggestion">
+
+    <div class="suggestion-title">
+      <h1>{{bulk_Suggetion_info.title}}</h1>
+    </div>
+
+    
+    {% for obj88 in bulk_Suggetion %}
+    <div class="suggestion-images shadow">
+      <img src="{{obj88.image}}">
+      <figure>
+     
+        <a href="">{{obj88.title}}</a>
+        <p>  {{obj88.description}}</p>
+        <a href="" class="text-primary">Continue Reading</a>
+      </figure>
+    </div>
+
+    {% endfor %}
+
+
+
+    <div class="suggestion-button">
+      <a href="{{bulk_Suggetion_info.button_url}}">{{bulk_Suggetion_info.button_text}}</a>
+    </div>
+  </section>
+
+
+  
+  <Section class="reach">
+    <div class="reah-titla">
+      <h1>{{bulk_end.title}}</h1>
+      <a href="{{bulk_end.button_text}}">{{bulk_end.button_text}}</a>
+    </div>
+  </Section>
+</main>
+
+<script src="{% static 'js_bulk/collab.js' %}"> </script>
+
+<script src="{% static 'js_bulk/slider.js' %}"></script>
+
+</body>
+
+</html>
+{% endblock %}

@@ -1,0 +1,1343 @@
+{% extends "base.html" %}
+{% load static %}
+{% block contant %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="sprint.css" rel="stylesheet">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+ 
+
+}
+body{
+    overflow-x: hidden;
+}
+.main-image2 img{
+    width: 100%;
+    height: 100%;
+}
+.Faster{
+    text-align: center;
+}
+.globally-info p{
+    margin-top:200px;
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 700;
+    color:  rgb(9, 85, 132);
+}
+.globally-images2 {
+width: 80%; margin-left: 50px;
+  padding-bottom: 20px;
+  margin-top: 30px;
+}
+.globally-images2  img{
+   
+width:100%;
+height: 300px;
+}
+.globally-images2 h6{
+    text-align: center;
+    margin-top: 10px;
+}
+.globally-images2 p{
+    text-align: center;
+    margin-top: 18px;
+}
+.container-fluid img{
+    width: 30%;
+}
+.navbar{
+    background-color:  rgb(40, 129, 184);
+}
+
+.main-images img{
+    width: 100%;
+    height:400px;
+}
+.Faster h1{
+    margin-top: 20px;
+ font-size:25px;
+}
+.Faster p{
+ font-size: 18px;
+}
+.Faster  button{
+    margin-top: 20px;
+  
+    padding: 10px 10px;
+    border-radius: 5px 5px;
+    border: white solid;
+    background-color: rgb(23, 213, 223);
+ color: rgb(7, 94, 118);
+}
+.busines{
+    margin-top: 80px;
+}
+.busines-info p{
+    margin: 20px 40px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing:2px;
+    text-transform: capitalize;
+ color: rgb(10, 197, 197);
+}
+.busines-image1 img{
+width:60%;
+margin-left:100px;
+}
+.features-image2{
+    background-color: white;
+    width: 70%;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+.features-image2 img{
+    width: 100%;
+}
+.features-image2 h1{
+   font-size: 18px;
+   padding-bottom: 10px;
+}
+.busines-image2 img{
+    width: 70%;
+    margin-left:70px;
+    margin-top: 40px;
+    }
+    .steps{
+        margin-top: 30px;
+    }
+    .steps-info h1{
+        margin-left: 100px;
+        font-size:35px;
+        color: rgb(7, 123, 123);
+
+    }
+
+    .step-1  h1{
+        margin-top: 30px;
+        margin-left: 30px;
+        font-size: 20px;
+        color: rgb(11, 134, 140);
+    }
+    .step-1 p{
+        margin-left: 30px;
+    font-size: 18px;
+
+    }
+    .step-2  h1{
+        margin-top: 30px;
+        margin-left: 30px;
+        font-size: 20px;
+        color: rgb(11, 134, 140);
+    }
+    .step-2 p{
+        margin-left: 30px;
+        font-size: 18px;
+    }
+    .step-3  h1{
+        margin-top: 30px;
+        margin-left: 30px;
+        font-size: 20px;
+        color: rgb(11, 134, 140);
+    }
+    .step-3 p{
+        margin-left: 30px;
+        font-size: 18px;
+    }
+    .features{margin-top: 30px;
+        padding-bottom: 80px;
+        background-color: rgb(228, 240, 247);
+    }
+    .features-info h1{
+   padding-top: 20px;
+       text-align: center;
+     font-weight:700;
+}
+.Hyperlocal h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 35px;
+    color: #47758a;
+}
+.Hyperlocal-images img{
+    width:40%;
+    margin-top: 20px;
+    margin-left: 160px;
+}
+.features-image1{
+    background-color: white;
+    width: 70%;
+    margin-top: 40px;
+    margin-left: 90px;
+    border-radius: 5px;
+    height: 450px;
+}
+.features-image1 img{
+    width: 100%;
+    height: 300px;
+}
+.features h1{
+    text-align: center;
+    margin-top:5px;
+    font-size: 20px;
+    color: rgb(11, 134, 140);
+}
+.features p{
+    text-align: center;
+}
+.partner{
+    margin-top: 50px;
+}
+.Services-title h1{
+margin-top: 50px;
+text-align: center;
+font-size: 30px;
+color: #000000;
+text-transform: capitalize;
+}
+.services-images{
+    width:27%;
+    margin-top:30px;
+    margin-left: 20px;
+    display: inline-block;
+}
+.marquee-2{
+    background-color: white;
+    width:80%;
+height:320px;
+   margin: 10px 20px;
+
+}
+.marquee-2 img{
+    width: 40%;
+    padding-top:30px;
+    margin-left: 30px;
+}
+
+.marquee-2  p{
+ margin: 10px 30px;
+}
+.services-images img{
+    width: 80%;
+    height:100px;
+    margin-left:12px;
+ 
+}
+.services-images h6{
+text-align: center;
+margin-top: 10px;
+text-transform: capitalize;
+}
+.partner-info h1{
+    text-align: center;
+    color: rgb(10, 175, 184);
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 35px;
+}
+.owl{
+    margin-top: 30px;
+ width: 90%;
+ margin-left:50px;
+}
+.marquee{
+    background-color: lightskyblue;
+    padding-bottom: 30px;
+}
+.marquee-info h1{
+    padding-top: 30px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+.marquee-1{
+    background-color: white;
+    width:68%;
+    padding-bottom: 20px;
+    margin-left: 30px;
+
+}
+.marquee-1 img{
+    width: 40%;
+    padding-top:30px;
+    margin-left: 30px;
+}
+.marquee-1 h1{
+    font-size:18px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.marquee-1  p{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+.trust-info h1{
+    text-transform: capitalize;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(11, 137, 137);
+}
+.trust-info{
+    text-transform: capitalize;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+.trust-images{
+    background-color: white;
+    width:40%;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+.trust-images img{
+    width: 90%;
+}
+.trust-images{
+    display: inline-block;
+    width:26%;
+    margin-left: 25px;
+}
+.trust-images:hover{
+    background-color: rgb(199, 244, 244);
+}
+
+.suggestion-title h1{
+    text-align: center;
+margin-top:80px;
+font-size: 30px;
+text-transform: capitalize;
+font-weight: 700;
+}
+.suggestion-images{
+    margin-top: 50px;
+    width: 80%;
+    margin-left: 50px;
+    padding-bottom: 20px;
+}
+.suggestion-images img{
+    width: 100%;
+}
+.suggestion-images h1{
+margin-left: 20px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.suggestion-images p{
+    margin: 10px 20px;
+}
+.suggestion-images a{
+    text-decoration: none;
+  margin-left: 20px;
+  margin-top: 30px;
+    color: black;
+}
+.suggestion-button {
+    margin-top: 50px;
+    text-align: center;
+    text-transform:uppercase ;
+    font-weight: bold;
+
+}
+.suggestion-button a{
+    padding: 20px  20px;
+    background-color: lightskyblue;
+    text-decoration: none;
+    color: black;
+}
+
+.collapsible {
+    background-color: #c1e6f7;
+    color: rgb(8, 8, 8);
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+ margin-left:55px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  .collab-info{
+    margin-top: 20px;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    width: 80%;
+    margin-left: 50px;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #ffffff;
+  }
+  .question-title h1{
+    text-align: center;
+    margin-top: 80px;
+    color: rgb(7, 102, 133);
+  }
+  .reach{
+    background-color: #c1e6f7;
+    margin-top: 30px;
+    padding-bottom:50px;
+  }
+  .reah-titla{
+    padding-top: 30px;
+    text-align: center;
+  }
+  .reah-titla h1{
+    font-size:30px;
+    margin: 10px 20px;
+  }
+  .reah-titla a{
+    position: relative;
+    top:20px;
+    background-color: black;
+    padding: 10px 30px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  .container-fluid img{
+    width: 30%;
+    margin-left: 20px;
+  }
+  .navbar{
+    margin-top: -8px;
+    background-color:  rgb(239, 137, 12);
+  }
+  
+  .main-images img{
+    width: 100%;
+    height:400px;
+  }
+  .main-info h1{
+  margin-top: -340px;
+  text-align: center;
+  font-size: 38px;
+  }
+  .main-info p{
+    text-align: center;
+    margin: 0px 10px;
+  }
+  
+  .footer{
+    padding-bottom: 20px;
+    background-color:  rgb(0, 0, 0);
+  }
+  
+  .footer-log img{
+    width: 30%;
+    padding-top: 30px;
+    margin-left: 30px;
+  }
+  .our-location h1{
+    margin-top: 20px;
+    font-size:20px;
+    margin-left: 30px;
+    font-weight: 700;
+    color: #eea909;
+  }
+  .our-location a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: rgb(255, 255, 255);
+  }
+  .our-location a i{
+    text-decoration: none;
+  
+    width:5px;
+    color: white;
+    font-size: 20px;
+  }
+  .our-location{
+    width:48%;
+    display:inline-block;
+  }
+  .sign p{
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size:20px;
+    margin-top: 30px;
+    color: #eea909;
+  }
+  .sign input{
+    margin-left:90px;
+    padding: 10px 10px;
+    text-transform: capitalize;
+    width: 55%;
+  
+    position: relative;
+    left:5px;
+  }
+  .sign button{
+    text-decoration: none;
+    padding: 10px 10px;
+    background-color:  #eea909;;
+    text-transform: uppercase;
+    font-weight: 700;
+  
+  }
+  .google img{
+    width:80%;
+  }
+  .app img{
+    width: 80%;
+  }
+  .app,.google{
+    margin-top: 30px;
+    display: inline-block;
+    width: 47%;
+  position: relative;
+  left:25px;
+   
+  }
+  .footer-title p{
+    margin-top: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    font-size: 18px;
+  } 
+  
+  .footer-title p{
+    margin-top: 20px;
+    text-align: center;
+    text-transform: capitalize;
+    color: white;
+    font-size: 18px;
+  }
+.Benefits-title h1{
+    margin-top: 80px;
+    text-align: center;
+    font-size: 30px;
+ text-transform: capitalize;
+}
+.Benefits-images{
+    margin-top: 20px;
+    text-align: center;
+padding: 20px ;
+    background-color: #47758a;
+}
+.Benefits-images img{
+    width: 40%;
+    margin-top: 20px;
+}
+.icons{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 20px;
+    margin-left:10px;
+  }
+  .icons a {
+    margin-top: 10px;
+  }
+
+  .navbar li{
+margin-left:20px;
+font-size:18x;
+}
+
+.Download{
+    margin-top: 50px;
+    text-align: center;
+   padding:10px 20px;
+
+    background-color: #47758a;
+}
+.Download-title h1{
+   
+    font-size: 20px;
+
+}
+.Download-title input{
+    text-align: center;
+    padding: 10px 20px;
+    width: 80%;
+}
+.Download-title button{
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+}
+
+.Benefits-images h1{
+   font-size: 15px;
+padding: 20px 20px;
+}
+.Benefits-images1{
+  
+    background-color: #fbfbfc;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+@media(min-width:1200px){
+    .container-fluid img{
+        width:10%;
+   margin-left: 80px;
+        padding-top: 10px;
+    }
+    .navbar-nav{
+        margin-right: 80px;
+        
+    }
+    .navbar-nav li a{
+        text-transform: capitalize;
+        font-size: 18px;
+        font-weight: 700;
+     
+    }
+    .Download-title h1{
+        margin-top: 30px;
+        font-size: 40px;
+        margin: 30px 80px;
+    }
+
+    .Download-title input{
+     width: 30%;
+   
+    }
+    .suggestion-images{
+        width:25%;
+        height: 440px;
+        display: inline-table;
+        position: relative;
+        left:60px;
+       
+    }
+    .Benefits-images{
+        padding-bottom: 30px;
+    }
+    .Benefits-title h1{
+        margin-top: 100px;
+        font-size:28px;
+    }
+   .Benefits-images1{
+    display: inline-table;
+    width:18%;
+   }
+    .icons{
+position: relative;
+right:85px;
+display: inline-table;
+text-transform: capitalize;
+font-size: 18px;
+font-weight: 700;
+
+    }
+    .icons a{
+        text-decoration: none;
+        margin-left: 20px;
+    }
+    .main-images img{
+        height: 650px;
+    }
+    .Faster h1{
+        font-size:30px;
+        margin: 0px 300px;
+     
+    }
+    .Faster p{
+        margin: 10px 200px;
+    }
+   
+    
+    .busines-info p{
+        font-size: 40px;
+     
+    }
+  
+   
+   .busines-info,.busines-image2{
+    display: inline-block;
+    width:49%;
+   }
+  
+   .globally-info p{
+    margin-top:350px;
+   }
+   .busines-image2 img{
+    width: 80%;
+    margin-left: 30px;
+   
+   }
+   
+ .globally-images2{
+  width: 20%;
+  display: inline-table;
+  height: 480px;
+}
+   
+  
+   .globally-images2  img{
+    width:100%;  
+   
+
+}
+
+.Services-title h1{
+    margin-top: 50px;
+  
+    font-size: 40px;
+  
+}
+    .services-images{
+ width: 20%;
+ position: relative;
+ left:80px;
+ display: inline-block;
+    }
+    .services-images img{
+        width: 90%;
+        height: 200px;
+    }
+    .busines-image1 img{
+        margin-top: -300px;
+        width: 80%;
+    }
+.busines-image1,.steps{
+  
+    display: inline-block;
+    width: 46%;
+}
+.steps{
+    width:50%;
+}
+.step-1 h1{
+    margin-left: 100px;
+}
+.step-1 p{
+    margin-left:100px;
+}
+.step-2 h1{
+    margin-left: 100px;
+}
+.step-2 p{
+    margin-left:100px;
+}
+.step-3 h1{
+    margin-left: 100px;
+}
+.step-3 p{
+    margin-left:100px;
+}
+.features-info h1{
+    font-size: 30px;
+    padding-top: 30px;
+}
+.features-image2{
+
+    width:19%;
+    display: inline-block;
+
+}
+.features-image2 h1{
+    font-size:20px;
+}
+.features-image1 p{
+    margin: 10px 9px;
+}
+.owl{
+    width: 75%;
+    position: relative;
+    left:180px;
+}
+.trust-info h1{
+    font-size: 40px;
+}
+.trust-info p{
+    font-size: 30px;
+}
+.trust-images{
+    width: 10%;
+position: relative;
+left:230px;
+}
+.trust-images img{
+    width:90%;
+}
+.suggestion-title h1{
+    font-size: 
+    40px;
+}
+
+.Hyperlocal-images{
+    display: inline-block;
+    width:20%;
+    position: relative;
+    left:180px;
+  
+    
+}
+.Hyperlocal-images img{
+    width: 80%;
+}
+.suggestion-button a{
+    font-size:20px;
+}
+.question-title h1{
+    margin-top: 80px;
+    font-size: 40px;
+}
+.collab-info{
+ width:49%;
+ display:inline-block;
+   
+}
+.reah-titla h1{
+    font-size: 40px;
+}
+.reah-titla a{
+    font-size: 22px;
+}
+.main-images img{
+    height: 650px;
+}
+.main-info h1{
+    font-size:55px;
+    margin-top: -490px;
+}
+.main-info p{
+     font-size: 25px;
+     margin-top: 10px;
+}
+.footer-log img{
+    width: 13%;
+    margin-left:90px;
+ 
+    }
+    .our-location{
+        width:13%;
+        display: inline-block;
+       position: relative;
+       left:80px;
+        margin-top: 20px;
+     
+    }
+   .our-location a{
+
+    font-size:20px;
+   }
+
+    .info{
+        display: inline-block;
+        width: 35%;
+        position: relative;
+        left:100px;
+        top:-35px;
+    
+    }
+    .google img{
+        width: 60%;
+        margin-left: 80px;
+        margin-top: -20px;
+    }
+    .app img{
+        width: 60%;
+        margin-top: -20px;
+    }
+
+}
+</style>
+
+
+<!-- /////main start -->
+<main>
+
+  <section class="main-image2">
+    <div class="main-image2">
+      <img src="{% static 'images\KV_4-9-copy-1.png' %}">
+    </div>
+  </section>
+  <section class="main-img">
+    <div class="main-backgound-img">
+
+      <div class="Faster">
+        <h1 class="text-uppercase fw-bold">Scale Faster with Same Day and
+          Next Day Delivery Services
+        </h1>
+        <p class="text-capitalize">Assured same day delivery in 16 cities and next day delivery in 27 cities with our
+          strategically located
+          warehouses and micro-fulfillment centers across India.</p>
+        <button class=" text-uppercase fw-bold">start now</button>
+      </div>
+    </div>
+  </section>
+  <section class="Benefits ">
+    <div class="Benefits-title">
+      <h1>Benefits of our Same Day and Next Day Delivery</h1>
+    </div>
+
+    <div class="Benefits-images">
+      <div class="Benefits-images1">
+
+        <img src="{% static 'images\Group-76.png' %}">
+        <h1> Improve customer
+          delight by 3.3x</h1>
+      </div>
+
+
+      <div class="Benefits-images1">
+
+        <img src="{% static 'images\Group-79.png' %}">
+        <h1> Reduce order
+          cancellations by 24%</h1>
+
+      </div>
+      <div class="Benefits-images1">
+
+        <img src="{% static 'images\Group-80.png' %}">
+        <h1>Reduce cart
+          abandonment by 28%</h1>
+      </div>
+      <div class="Benefits-images1">
+
+        <img src="{% static 'images\Group-81.png' %}">
+        <h1> Improve conversions
+          upto 300%</h1>
+      </div>
+    </div>
+  </section>
+
+  <section class="busines">
+    <div class="busines-image1">
+      <img src="{% static 'images\Mobile-Ecommerce.png' %}">
+    </div>
+
+    <div class="steps">
+      <div class="steps-info">
+        <h1>3 Steps to Get Started</h1>
+      </div>
+      <div class="step-1">
+        <h1>Step 1: Add your orders</h1>
+        <p>Easily import all your orders across channels with our API integration and select the shipments.</p>
+      </div>
+      <div class="step-2">
+        <h1>Step 2: Choose a Carrier Partner</h1>
+        <p>Select a courier partner based on your specific requirements. Alternatively, you can also pick a partner
+          based on our AI-driven recommendation engine.</p>
+      </div>
+      <div class="step-3">
+        <h1>Step 3: Pack, Ship & Track</h1>
+        <p>Pack your shipments, print labels and hand them over to the courier partner. Following that, you can track
+          your order and get real-time visibility on our dashboard.</p>
+      </div>
+    </div>
+  </section>
+
+
+<section class="Download">
+  <div class="Download-title">
+    <h1>Download the list of cities we offer same day and next day delivery services in
+    </h1>
+    <input type="text" placeholder="enter your email address"><br>
+    <button>submit</button>
+  </div>
+</section>
+
+
+ 
+
+
+  <section class="partner">
+    <div class="partner-info">
+      <h1>Our Carrier Partners</h1>
+    </div>
+    <div class="owl">
+      <div class="owl-carousel owl-theme my-slids">
+        <div class="item slide-items"><img src="{% static 'images\courier1.png' %}" class="shadow"
+            style="width:70%; border: rgb(255, 253, 253) 2px solid;"></div>
+        <div class="item slide-items"><img src="{% static 'images\courier3.png' %}" class="shadow"
+            style="width:70%; border: rgb(255, 253, 253) 2px solid;"></div>
+        <div class="item slide-items"><img src="{% static 'images\courier4.png' %}" class="shadow"
+            style="width:70%; border: rgb(255, 253, 253) 2px solid;"></div>
+        <div class="item slide-items"><img src="{% static 'images\courier5.png' %}" class="shadow"
+            style="width:70%; border: rgb(255, 253, 253) 2px solid;"></div>
+        <div class="item slide-items"><img src="{% static 'images\courier19.png' %}" class="shadow"
+            style="width:70%; border: rgb(255, 253, 253) 2px solid;"></div>
+        <div class="item slide-items"><img src="{% static 'images\courier20.png' %}" class="shadow"
+            style="width:70%; border: rgb(255, 253, 253) 2px solid;"></div>
+        <div class="item slide-items"><img src="{% static 'images\courier16.png' %}" class="shadow"
+            style="width:70%; border: rgb(255, 253, 253) 2px solid;"></div>
+        <div class="item slide-items"><img src="{% static 'images\courier18.png' %}" class="shadow"
+            style="width:70%; border: rgb(255, 253, 253) 2px solid;"></div>
+        <div class="item slide-items"><img src="{% static 'images\courier11.png' %}" class="shadow"
+            style="width:70%; border: rgb(255, 253, 253) 2px solid;"></div>
+        <div class="item slide-items"><img src="{% static 'images\courier13.png' %}" class="shadow"
+            style="width:70%; border: rgb(255, 253, 253) 2px solid;"></div>
+        <div class="item slide-items"><img src="{% static 'images\courier8.png' %}" class="shadow"
+            style="width:70%; border: rgb(255, 253, 253) 2px solid;"></div>
+        <div class="item slide-items"><img src="{% static 'images\courier9.png' %}" class="shadow"
+            style="width:70%; border: rgb(255, 253, 253) 2px solid;"></div>
+      </div>
+    </div>.
+
+  </section>
+  <section class="marquee">
+    <div class="marquee-info">
+      <h1>Sellers display of affection</h1>
+    </div>
+    <marquee direction="left">
+      <div class="marquee-background d-flex">
+
+        <div class="marquee-1 shadow">
+          <img src="{% static 'images\5-Star.png' %}">
+          <figure>
+            <h1>Sellers display of affection</h1>
+            <p>The pocket pinch offered by Shipyaari <br>is the best compared to other carriers in <br>the market.
+              Best for small businesses like <br>mine who do not have to go through the<br> minimum number of orders
+              cap.</p>
+          </figure>
+        </div>
+
+        <div class="marquee-1 shadow">
+          <img src="{% static 'images\5-Star.png' %}">
+          <figure>
+            <h1>Sellers display of affection</h1>
+            <p>The pocket pinch offered by Shipyaari <br>is the best compared to other carriers in <br>the market.
+              Best for small businesses like <br>mine who do not have to go through the<br> minimum number of orders
+              cap.</p>
+          </figure>
+        </div>
+
+        <div class="marquee-1 shadow">
+          <img src="{% static 'images\5-Star.png' %}">
+          <figure>
+            <h1>Sellers display of affection</h1>
+            <p>The pocket pinch offered by Shipyaari <br>is the best compared to other carriers in <br>the market.
+              Best for small businesses like <br>mine who do not have to go through the<br> minimum number of orders
+              cap.</p>
+          </figure>
+        </div>
+
+        <div class="marquee-1 shadow">
+          <img src="{% static 'images\5-Star.png' %}">
+          <figure>
+            <h1>Sellers display of affection</h1>
+            <p>The pocket pinch offered by Shipyaari <br>is the best compared to other carriers in <br>the market.
+              Best for small businesses like <br>mine who do not have to go through the<br> minimum number of orders
+              cap.</p>
+          </figure>
+        </div>
+
+        <div class="marquee-1 shadow">
+          <img src="{% static 'images\5-Star.png' %}">
+          <figure>
+            <h1>Sellers display of affection</h1>
+            <p>The pocket pinch offered by Shipyaari <br>is the best compared to other carriers in <br>the market.
+              Best for small businesses like <br>mine who do not have to go through the<br> minimum number of orders
+              cap.</p>
+          </figure>
+        </div>
+      </div>
+    </marquee>
+    </div>
+
+    <marquee direction="right">
+      <div class="marquee-background d-flex">
+        <div class="marquee-2 shadow">
+          <img src="{% static 'images\all-that-dips-1.png' %}">
+          <figure>
+            <p>One of the best aggregators that I have been<br> dealing with for almost a year now.<br> What I find
+              best about them is the pricing and<br> back-end delivery support.<br> offers support like them. Highly
+            </p>
+          </figure>
+        </div>
+
+
+        <div class="marquee-2 shadow">
+          <img src="{% static 'images\WhatsApp-Image-2023-07-24-at-10.23.29-PM.jpeg' %}">
+          <figure>
+            <p>One of the best aggregators that I have been<br> dealing with for almost a year now.<br> What I find
+              best about them is the pricing and<br> back-end delivery support.<br> offers support like them. Highly
+            </p>
+          </figure>
+        </div>
+
+
+        <div class="marquee-2 shadow">
+          <img src="{% static 'images\qw.jpg' %}">
+          <figure>
+            <p>One of the best aggregators that I have been<br> dealing with for almost a year now.<br> What I find
+              best about them is the pricing and<br> back-end delivery support.<br> offers support like them. Highly
+            </p>
+          </figure>
+        </div>
+
+
+        <div class="marquee-2 shadow">
+          <img src="{% static 'images\dr-vaidyas-1-2048x504-1.png' %}">
+          <figure>
+            <p>One of the best aggregators that I have been<br> dealing with for almost a year now.<br> What I find
+              best about them is the pricing and<br> back-end delivery support.<br> offers support like them. Highly
+            </p>
+          </figure>
+        </div>
+
+
+        <div class="marquee-2 shadow">
+          <img src="{% static 'images\Banner_1_36e3eed0-c2bc-4bdd-b9ff-0d3a277e128b.webp' %}">
+          <figure>
+            <p>One of the best aggregators that I have been<br> dealing with for almost a year now.<br> What I find
+              best about them is the pricing and<br> back-end delivery support. No other aggregator<br> offers support
+              like them. Highly</p>
+          </figure>
+        </div>
+    </marquee>
+  </section>
+
+
+
+  <section class="trust">
+    <div class="trust-info">
+      <h1>Trusted by thousands</h1>
+      <p>The preferred choice of more than 25,000+ businesses
+      </p>
+    </div>
+
+
+    <div class="trust-images shadow">
+      <img src="{% static 'images\ll1.png' %}">
+    </div>
+
+    <div class="trust-images shadow">
+      <img src="{% static 'images\ll2.png' %}">
+    </div>
+
+    <div class="trust-images shadow">
+      <img src="{% static 'images\ll3.png' %}">
+    </div>
+
+    <div class="trust-images shadow">
+      <img src="{% static 'images\ll6.png' %}">
+    </div>
+
+    <div class="trust-images shadow">
+      <img src="{% static 'images\ll99.png' %}">
+    </div>
+
+    <div class="trust-images shadow">
+      <img src="{% static 'images\ll98.png' %}">
+    </div>
+  </section>
+
+
+
+  <section class="suggestion">
+
+    <div class="suggestion-title">
+      <h1>Suggested Reads</h1>
+    </div>
+    <div class="suggestion-images shadow">
+      <img src="{% static 'images\WhatsApp-Image-2023-09-06-at-4.49.58-PM.jpeg' %}">
+      <figure>
+        <h1>ECommerce Shipping</h1>
+        <a href="">7 Ways How Next Day Delivery...</a>
+        <p>Gaining customer loyalty is the brand  equivalent of the proverbial “holy grail” in the brutally</p>
+        <a href="" class="text-primary">Continue Reading</a>
+      </figure>
+    </div>
+
+
+
+    <div class="suggestion-images shadow">
+      <img src="{% static 'images\WhatsApp-Image-2023-09-06-at-4.51.49-PM.jpeg' %}">
+      <figure>
+        <h1>ECommerce Shipping</h1>
+        <a href="" class="a-imge1">3 Delivery Challenges With Same-Day Delivery</a>
+        <p>Even though more and more retail stores are now shifting to eCommerce platforms, some stil</p>
+
+      </figure>
+      <a href="" class="text-primary">Continue Reading</a>
+    </div>
+
+
+
+    <div class="suggestion-images shadow">
+      <img src="{% static 'images\Banners-to-upload-80.png' %}">
+      <figure>
+        <h1>ECommerce Shipping</h1>
+        <a href="">9 Ways How Logistics Companies Manage...</a>
+        <p>Next day delivery has established itself as the industry standard for logistical effectiveness in the</p>
+        <a href="" class="text-primary">Continue Reading</a>
+      </figure>
+    </div>
+
+
+    <div class="suggestion-button">
+      <a href="">read more</a>
+    </div>
+  </section>
+
+
+  <section class="question">
+    <div class="question-title">
+      <h1>Frequently Asked Questions</h1>
+    </div>
+    <div class="collab-info">
+      <button class="collapsible"> Which are the cities where Same Day Delivery is available?</button>
+      <div class="content">
+        <p>
+          Shipyaari Sprint – Same Day delivery solutions are presently available in Mumbai, Delhi, Gurgaon, Noida Kolkata, Pune Vadodara, Faridabad, Indore, Ahmedabad, Ludhiana, Surat, Chennai and Rajkot. We continue to add new locations often, so please reach out to our experts to avail this service.</p>
+      </div>
+    </div>
+    <div class="collab-info">
+      <button class="collapsible"> Which are the cities where Next day delivery service is available?</button>
+      <div class="content">
+        <p>
+         
+          Agra, Ahmedabad, Ambala, Bangalore, Bhiwandi, Bilaspur (Haryana), Chakan, Chandigarh, Chennai, Delhi, Faridabad, Ghaziabad, Gurgaon, Hisar, Hyderabad, Jodhpur, Kanpur, Kolhapur, Lucknow, Moradabad, Mumbai, Nashik, Noida, Pune, Sonipat, Surat, Thane, Vapi, Vasai, Vashi. We continue to add new locations often, so please reach out to our experts to avail this service.</p>
+      </div>
+    </div>
+
+    <div class="collab-info">
+      <button class="collapsible"> Do I need to have my own warehouse in the city I need same and next day delivery?</button>
+      <div class="content">
+        <p>
+         
+          It is not compulsory to have your own warehouse in the city you wish to offer same and next day delivery. We have a wide network of strategically placed warehouses and micro fulfillment centers which can be used to fulfill SDD and NDD orders for you.</p>
+      </div>
+    </div>
+
+    <div class="collab-info">
+      <button class="collapsible">   Is COD offered in same day and next day delivery?</button>
+      <div class="content">
+        <p>
+          Yes, COD is offered for Same day and Next day deliveries. You can also opt for our express COD remittance service along with it. Feel free to reach out to our experts to know the details.</p>
+      </div>
+    </div>
+
+    <div class="collab-info">
+      <button class="collapsible"> Is there is volume/dimension or weight restrictions for Same and Next Day deliveries?</button>
+      <div class="content">
+        <p>
+          
+No, there is no restriction in terms of volume, dimension or weight for same and next day deliverie
+         </p>
+      </div>
+    </div>
+
+
+
+    <div class="collab-info">
+      <button class="collapsible">Will I receive a daily consolidated report for my SDD and NDD orders? </button>
+      <div class="content">
+        <p>
+          Yes, you will receive a consolidated report for all your orders by the end of the day.  You can also opt for custom reporting, for details related to the same reach out to our experts.
+         </p>
+      </div>
+    </div>
+
+
+    <div class="collab-info">
+      <button class="collapsible"> Would Shipyaari provide account managers for any service-related issues for SDD and NDD orders?</button>
+      <div class="content">
+        <p>
+          Yes, you will have a dedicated KAM who would be your single point contact for all your same and next day delivery related concerns.
+         </p>
+      </div>
+    </div>
+
+
+    <div class="collab-info">
+      <button class="collapsible">How long does next-day delivery take? </button>
+      <div class="content">
+        <p>
+          Next day delivery orders are fulfilled within the next calendar day.  They are picked up from the warehouses or fulfilment centres nearest to the customers address and delivered within the next day, through wide range of last mile delivery partners.
+          
+          The products need to be stored in strategic locations to ensure that same day delivery operations can ensure smooth and timely deliveries.
+          
+          Feel free to reach out to our experts to know further details.
+         </p>
+      </div>
+    </div>
+
+
+    <div class="collab-info">
+      <button class="collapsible">How can I get same-day delivery courier service for my orders? </button>
+      <div class="content">
+        <p>
+          In order to get same day delivery services for your brand’s orders, you need to have a warehouse or storage facility in the region you want to service, for which you can get flexi or shared warehousing also if you don’t have your own facilities.
+          
+          Additionally, it is essential to align your logistics service provider for the same. Check if they offer same day service in your desired location and also if they have enough bandwidth to service your orders in case of sudden surge in demands.
+          
+          For brands, at times it become difficult to coordinate with these multiple solution providers, this is where service of an enabler like Shipyaari can be extremely helpful.
+          
+          We store your inventory across our wide range of fulfilment facilities and facilitate the same day deliveries, providing end to end support.
+         </p>
+      </div>
+    </div>
+
+    <div class="collab-info">
+      <button class="collapsible">Can my orders be delivered in one day? </button>
+      <div class="content">
+        <p>
+          Yes, your orders irrespective of their volume or quantity can be delivered within one day across a wide option of regions.
+          
+          In case you do not have a storage or fulfillment centers. In the desired location we ensure safe storage of your inventory across our wide range of fulfilment centres and facilitate same and next day deliveries, providing end to end support.
+          
+          Our wide range of platform integration options also ensure that orders you orders can be fetched in real time and ensure seamless movement and same day deliveries
+         </p>
+      </div>
+    </div>
+  </section>
+
+  <Section class="reach">
+    <div class="reah-titla">
+      <h1>Like what you see? Take the first step and reach out.</h1>
+      <a href="">read more</a>
+    </div>
+  </Section>
+</main>
+
+<script src="{% static 'js_delta/collab.js' %}"> </script>
+
+<script src="{% static 'js_delta/slider.js' %}"></script>
+
+</body>
+
+</html>
+{% endblock %}

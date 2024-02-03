@@ -1,0 +1,95 @@
+
+.container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  align-items: center;
+  height:550px; 
+  border: 1px solid black;
+  margin-left: 400px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.container button {
+ width: 200px;
+ height: 50px;
+ background-color: skyblue;
+ margin-bottom: 30px;
+
+}
+
+.container button a{
+  color: white;
+  padding-bottom: 20px;
+  text-decoration: none;
+}
+
+/* Style the logo image */
+img {
+  max-width: 200px; /* Adjust the maximum width as needed */
+  height: auto;
+  margin-bottom: -20px; /* Add some spacing below the image */
+  margin-top: 20px;
+}
+
+/* Style the "OR" text */
+p {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Style the input field */
+input[type="char_fiels/number/email"] {
+  width: 300px;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the login button */
+button[type="submit"] {
+  background-color:orangered;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; 
+  width:100px ;
+}
+
+/* Style the "Don't have an account?" label */
+.lab {
+  font-weight: bold;
+  margin-top: 10px; /* Add some spacing above the label */
+  padding-bottom: 10px;
+}
+
+/* Style the link */
+a {
+  color: #4285f4;
+  text-decoration: none;
+}
+
+/* Style the mail link */
+a[href^="mailto:"] {
+  color: #4285f4;
+  text-decoration: none;
+  margin-top: 10px; /* Add some spacing above the mail link */
+}
+@media(max-width:600px){
+  .container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    align-items: center;
+    height:550px; 
+    border: 1px solid black;
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+}
